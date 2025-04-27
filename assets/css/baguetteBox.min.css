@@ -223,14 +223,3 @@
   --bs-btn-disabled-border-color: #fff;
 }
 
-::selection {
-  color: #a62626;
-  background: #212529;
-  text-shadow: none;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
