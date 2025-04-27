@@ -1,0 +1,12 @@
+::selection {
+  color: #ad0f0f;
+  background: #212529;
+  text-shadow: none;
+}
+
+::selection {
+  color: #fff;
+  background: #ffffff;
+  text-shadow: none;
+}
+
