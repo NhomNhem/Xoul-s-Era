@@ -1,0 +1,210 @@
+/* Shared styles for Xoul's Era (chuẩn theo Introduction.html) */
+body {
+    background: linear-gradient(135deg, #2b0537, #1e0b3b, #0d1954);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(255, 50, 150, 0.4) 0%, transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(50, 200, 255, 0.4) 0%, transparent 30%);
+    pointer-events: none;
+    z-index: -1;
+}
+.main-header {
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+.navigation-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+.nav-tab {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: 'Merienda', serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-tab:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.nav-tab.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.page-title {
+    font-family: 'Water Brush', cursive;
+    font-size: 80px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 
+        0 0 5px rgba(255, 255, 255, 0.7),
+        0 0 10px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 50, 150, 0.5),
+        0 0 40px rgba(255, 50, 150, 0.4);
+    animation: pulsate 2s infinite alternate;
+}
+.section-title {
+    font-family: 'Merienda', serif;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.content-text {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.intro-nav {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.intro-nav-item {
+    width: 100%;
+    text-align: center;
+    font-family: 'Merienda', serif;
+    font-size: 16px;
+    background: #FFD040;
+    color: #18100a;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px 0;
+    animation: buttonHover 0.3s ease-in-out;
+}
+.intro-nav-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    color: black;
+}
+.intro-nav-item.active {
+    background: #FFA040;
+    color: #fff;
+}
+.highlighted-box {
+    background-color: rgba(255, 207, 64, 0.2);
+    border-left: 5px solid rgb(255, 207, 64);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 0 10px 10px 0;
+}
+.side-by-side {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+}
+.side-by-side-image {
+    flex: 1;
+    min-width: 300px;
+}
+.side-by-side-content {
+    flex: 1;
+    min-width: 300px;
+}
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+.stat-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.stat-number {
+    font-family: 'Merienda', serif;
+    font-size: 48px;
+    color: rgb(255, 207, 64);
+    margin-bottom: 10px;
+}
+.stat-label {
+    font-family: 'Merienda', serif;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+.footer-section {
+    margin-top: 50px;
+    padding: 30px 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+@keyframes pulsate {
+    0% {
+        text-shadow: 
+            0 0 5px rgba(255, 255, 255, 0.7),
+            0 0 10px rgba(255, 255, 255, 0.5),
+            0 0 20px rgba(255, 50, 150, 0.5),
+            0 0 40px rgba(255, 50, 150, 0.4);
+    }
+    100% {
+        text-shadow: 
+            0 0 10px rgba(255, 255, 255, 0.9),
+            0 0 20px rgba(255, 255, 255, 0.7),
+            0 0 30px rgba(255, 50, 150, 0.7),
+            0 0 50px rgba(255, 50, 150, 0.6);
+    }
+}
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
