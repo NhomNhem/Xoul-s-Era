@@ -1,151 +1,283 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en" style="font-family: 'Work Sans', sans-serif;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Contacts - Brand</title>
+    <title>About - Xoul's Era</title>
+    <meta property="og:image" content="assets/img/Icon/logo.svg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Water+Brush&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&amp;display=swap">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/Icon/logo.svg"/>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md sticky-top bg-body shadow-sm py-md-3" style="height: 59px;">
-        <div class="container"><a class="navbar-brand" href="index.html" style="font-family: 'Work Sans', sans-serif;"><img src="assets/img/Icon/logo.svg" width="59" height="50" style="font-family: 'Work Sans', sans-serif;">NhomToongTenz</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-family: 'Work Sans', sans-serif;"><span class="visually-hidden" style="font-family: 'Work Sans', sans-serif;">Toggle navigation</span><span class="navbar-toggler-icon" style="font-family: 'Work Sans', sans-serif;"></span></button>
+<body class="overview-page">
+    <nav class="navbar navbar-expand-md sticky-top py-md-3" style="background-color: rgba(0, 0, 0, 0.7); height: 59px;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">
+                <img src="assets/img/Icon/logo.svg" width="59" height="50" style="font-family: 'Work Sans', sans-serif;">NhomToongTenz
+            </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-family: 'Work Sans', sans-serif;">
+                <span class="visually-hidden" style="font-family: 'Work Sans', sans-serif;">Toggle navigation</span>
+                <span class="navbar-toggler-icon" style="font-family: 'Work Sans', sans-serif;"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navcol-1" style="font-family: 'Work Sans', sans-serif;">
                 <ul class="navbar-nav mx-auto" style="font-family: 'Work Sans', sans-serif;">
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="/index.html" style="font-family: 'Work Sans', sans-serif;">Overview</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="/book.html" style="font-family: 'Work Sans', sans-serif;">World</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">Combat</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">Asset</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">Power</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">Story</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">About</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">Overview</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="world.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">World</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="combat.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Combat</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="asset.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Asset</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="book.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Story</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="contacts.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="text-center py-5 mb-5">
-        <div class="container">
+    
+    <div class="container overview-container">
+        <h1 class="overview-title">About Us</h1>
+        
+        <div class="overview-buttons">
+            <a href="#team" class="overview-button">Team</a>
+            <a href="#mission" class="overview-button">Mission</a>
+            <a href="#roadmap" class="overview-button">Roadmap</a>
+            <a href="#contact" class="overview-button">Contact</a>
+        </div>
+        
+        <!-- Team Section -->
+        <div class="overview-content" id="team">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-5">
-                        <div class="mb-4">
-                            <h1>Combat</h1>
-                            <hr>
+                    <div class="mb-4">
+                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Our Team</h2>
+                        <hr>
+                    </div>
+                    
+                    <p style="color: #ffffff; text-align: center; margin-bottom: 30px;">
+                        NhomToongTenz là một đội ngũ phát triển game trẻ đầy tâm huyết, được thành lập vào năm 2023 với mục tiêu 
+                        tạo ra những trải nghiệm game độc đáo kết hợp giữa kỹ thuật hiện đại và văn hóa truyền thống Việt Nam.
+                    </p>
+                </div>
+                
+                <div class="col-12 col-xl-10 mx-auto">
+                    <div class="row mb-4">
+                        <!-- Team Member 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%; text-align: center;">
+                                <img src="assets/img/Icon/logo.svg" class="img-fluid mb-3" style="max-height: 120px; border-radius: 50%; background-color: #fff; padding: 10px;">
+                                <h4 style="font-family: Merienda, serif; color: #ffffff;">Nguyễn Văn A</h4>
+                                <p style="font-style: italic; color: #aaa;">Game Director & Lead Developer</p>
+                                <p style="color: #ffffff;">
+                                    Chuyên gia về Unity và phát triển gameplay với hơn 5 năm kinh nghiệm.
+                                </p>
+                            </div>
                         </div>
-                        <p class="lead fs-6">Hệ thống combat của game 10đ</p>
+                        
+                        <!-- Team Member 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%; text-align: center;">
+                                <img src="assets/img/Icon/logo.svg" class="img-fluid mb-3" style="max-height: 120px; border-radius: 50%; background-color: #fff; padding: 10px;">
+                                <h4 style="font-family: Merienda, serif; color: #ffffff;">Trần Thị B</h4>
+                                <p style="font-style: italic; color: #aaa;">Art Director & Character Designer</p>
+                                <p style="color: #ffffff;">
+                                    Chuyên gia thiết kế pixel art với niềm đam mê về thần thoại và văn hóa Việt Nam.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Team Member 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%; text-align: center;">
+                                <img src="assets/img/Icon/logo.svg" class="img-fluid mb-3" style="max-height: 120px; border-radius: 50%; background-color: #fff; padding: 10px;">
+                                <h4 style="font-family: Merienda, serif; color: #ffffff;">Lê Văn C</h4>
+                                <p style="font-style: italic; color: #aaa;">Game & Level Designer</p>
+                                <p style="color: #ffffff;">
+                                    Chuyên gia về thiết kế màn chơi và hệ thống gameplay cân bằng.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <div class="container d-flex flex-column align-items-center py-4 py-xl-5">
-        <div class="row gy-4 row-cols-1 row-cols-md-2 w-100" style="max-width: 800px;">
-            <div class="col order-md-first">
-                <div class="card"><img class="card-img w-100 d-block" src="assets/img/Screenshot%202025-04-27%20201705.png" width="374" height="256">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
-                        <h4>Tấn công thường&nbsp;</h4><img src="assets/img/JoannaDArcIIIAttackFrontHeavyAttack.gif" width="320" height="214">
-                        <p></p>
+        
+        <!-- Mission Section -->
+        <div class="overview-content" id="mission">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="mb-4">
+                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Our Mission</h2>
+                        <hr>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 mx-auto">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; margin-bottom: 30px;">
+                        <h4 style="font-family: Merienda, serif; color: #ffffff; text-align: center;">Tầm Nhìn</h4>
+                        <p style="color: #ffffff; text-align: justify;">
+                            Trở thành studio game hàng đầu Việt Nam trong việc kết hợp văn hóa truyền thống với công nghệ hiện đại, 
+                            tạo ra những trải nghiệm game độc đáo và mang tính giáo dục.
+                        </p>
+                        
+                        <h4 style="font-family: Merienda, serif; color: #ffffff; text-align: center; margin-top: 20px;">Sứ Mệnh</h4>
+                        <p style="color: #ffffff; text-align: justify;">
+                            Chúng tôi cam kết:
+                        </p>
+                        <ul style="color: #ffffff;">
+                            <li>Tạo ra những trải nghiệm game chất lượng cao, giàu tính nghệ thuật và đậm đà bản sắc văn hóa Việt Nam</li>
+                            <li>Phát triển các sản phẩm game kết hợp giữa yếu tố giải trí và giáo dục về lịch sử, văn hóa</li>
+                            <li>Thúc đẩy sự phát triển của ngành công nghiệp game trong nước</li>
+                            <li>Xây dựng cộng đồng game thủ lành mạnh và bền vững</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col d-md-flex order-first justify-content-md-start align-items-md-end order-md-1">
-                <div style="width: 80%;">
-                    <h2>Thánh kiếm</h2>
-                    <p class="w-lg-50">Thanh Excalibur trong tay cô với sức mạnh được các vị thần ban tặng cô là một kiếm sĩ mà ai cũng phải sợ hãi khi đụng độ.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
-                </div>
-            </div>
-            <div class="col order-md-2">
-                <div class="card"><img class="card-img w-100 d-block" src="assets/img/Screenshot%202025-04-27%20201705.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
-                        <h4>Skill 1&nbsp;</h4><img src="assets/img/JoannaDArcIIICastsLightCut.gif" width="432" height="207">
+        </div>
+        
+        <!-- Roadmap Section -->
+        <div class="overview-content" id="roadmap">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="mb-4">
+                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Game Roadmap</h2>
+                        <hr>
+                    </div>
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; color: #ffffff; margin-bottom: 30px;">
+                        <div class="row mb-3">
+                            <div class="col-md-3 text-center">
+                                <div style="background-color: rgba(173, 15, 15, 0.5); border-radius: 10px; padding: 10px;">
+                                    <h5>Q3 2025</h5>
+                                    <p style="font-size: 0.9rem;">Alpha Release</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <ul>
+                                    <li>Phát hành bản alpha với các tính năng cơ bản</li>
+                                    <li>Hoàn thiện hệ thống chiến đấu và điều khiển nhân vật</li>
+                                    <li>Giới thiệu vương quốc đầu tiên: Leto</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="row mb-3">
+                            <div class="col-md-3 text-center">
+                                <div style="background-color: rgba(173, 15, 15, 0.5); border-radius: 10px; padding: 10px;">
+                                    <h5>Q1 2026</h5>
+                                    <p style="font-size: 0.9rem;">Beta Release</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <ul>
+                                    <li>Mở rộng thêm hai vương quốc: Uranastra và Origin</li>
+                                    <li>Thêm các nhân vật và kỹ năng mới</li>
+                                    <li>Cải thiện đồ họa và hiệu ứng âm thanh</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-3 text-center">
+                                <div style="background-color: rgba(173, 15, 15, 0.5); border-radius: 10px; padding: 10px;">
+                                    <h5>Q4 2026</h5>
+                                    <p style="font-size: 0.9rem;">Full Release</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <ul>
+                                    <li>Phát hành phiên bản đầy đủ với tất cả nội dung</li>
+                                    <li>Giới thiệu vương quốc cuối cùng: Xylos</li>
+                                    <li>Hoàn thiện cốt truyện và các nhiệm vụ phụ</li>
+                                    <li>Hỗ trợ nhiều nền tảng: PC, Mobile, Console</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col order-md-2">
-                <div class="card"><img class="card-img w-100 d-block" src="assets/img/Screenshot%202025-04-27%20201705.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
-                        <h4>Skill 2</h4><img class="me-0 pe-5 ps-5 mt-0" src="assets/img/JoannaDArcIIICastsHolySlash.gif" width="506" height="225">
-                        <p></p>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="overview-content" id="contact">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="mb-4">
+                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Contact Us</h2>
+                        <hr>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; height: 100%;">
+                                <h4 style="font-family: Merienda, serif; color: #ffffff; text-align: center;">Liên Hệ</h4>
+                                <ul class="list-unstyled text-center" style="color: #ffffff;">
+                                    <li class="mb-2"><i class="icon icon-tabler icon-tabler-mail me-2"></i> Email: nhomtoongtenz@email.com</li>
+                                    <li class="mb-2"><i class="icon icon-tabler icon-tabler-phone me-2"></i> Điện thoại: +84 123 456 789</li>
+                                    <li class="mb-2"><i class="icon icon-tabler icon-tabler-map-pin me-2"></i> Địa chỉ: Hà Nội, Việt Nam</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; height: 100%;">
+                                <h4 style="font-family: Merienda, serif; color: #ffffff; text-align: center;">Theo dõi chúng tôi</h4>
+                                <div class="text-center mt-3">
+                                    <a href="#" class="me-3" style="color: #ffffff; font-size: 2rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-facebook">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="me-3" style="color: #ffffff; font-size: 2rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-twitter">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="me-3" style="color: #ffffff; font-size: 2rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-instagram">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                            <path d="M16.5 7.5l0 .01"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" style="color: #ffffff; font-size: 2rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-discord">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <path d="M9 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                            <path d="M15 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                                            <path d="M7.5 7.5c3.5 -1 5.5 -1 9 0"></path>
+                                            <path d="M7 16.5c3.5 1 6.5 1 10 0"></path>
+                                            <path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-1 2.5"></path>
+                                            <path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l1 2.5"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <p class="mt-3 text-center" style="color: #ffffff;">
+                                    Đăng ký nhận thông báo về tiến độ phát triển game và các sự kiện đặc biệt!
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container d-flex flex-column align-items-center py-4 py-xl-5">
-        <div class="row gy-4 row-cols-1 row-cols-md-2 w-100" style="max-width: 800px;">
-            <div class="col order-md-first">
-                <div class="card"><img class="card-img w-100 d-block" src="assets/img/Screenshot%202025-04-27%20201705.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
-                        <h4>Tấn công thường&nbsp;</h4><img src="assets/img/CentaurLadyLabeledChargeShoot.gif" width="372" height="153">
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col d-md-flex order-first justify-content-md-start align-items-md-end order-md-1">
-                <div style="width: 80%;">
-                    <h2>Nhân Mã</h2>
-                    <p class="w-lg-50">Cung Sự Sống trong tay cô thuộc nhân vật tấn công xa với vô vàng skill khống chế co khiến đối thủ phải sml.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
-                    <p class="w-lg-50"></p>
-                </div>
-            </div>
-            <div class="col order-md-2">
-                <div class="card"><img class="card-img w-100 d-block" src="assets/img/Screenshot%202025-04-27%20201705.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
-                        <h4>Skill 1&nbsp;</h4><img src="assets/img/CentaurLadyLabeledChargeShoot.gif" width="373" height="186">
-                    </div>
-                </div>
-            </div>
-            <div class="col order-md-2">
-                <div class="card"><img class="card-img w-100 d-block" src="assets/img/Screenshot%202025-04-27%20201705.png">
-                    <div class="card-img-overlay text-center d-flex flex-column justify-content-center align-items-center p-4">
-                        <h4>Skill 2&nbsp;</h4><img src="assets/img/CentaurLadyLabeledWindStorm.gif" width="373" height="192">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="text-center bg-body-tertiary">
-        <div class="container py-4 py-lg-5">
-            <h1 class="fs-4 text-body mb-4"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-components fs-4 text-body me-2">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 12l3 3l3 -3l-3 -3z"></path>
-                    <path d="M15 12l3 3l3 -3l-3 -3z"></path>
-                    <path d="M9 6l3 3l3 -3l-3 -3z"></path>
-                    <path d="M9 18l3 3l3 -3l-3 -3z"></path>
-                </svg>NhomTongTenzz</h1>
-            <ul class="list-inline">
-                <li class="list-inline-item me-3"><a class="link-body-emphasis" href="#">Blog</a></li>
-                <li class="list-inline-item me-3"><a class="link-body-emphasis" href="#">Book</a></li>
-                <li class="list-inline-item me-3"><a class="link-body-emphasis" href="#">About</a></li>
-                <li class="list-inline-item me-3"><a class="link-body-emphasis" href="#">Privacy</a></li>
-                <li class="list-inline-item"><a class="link-body-emphasis" href="#">Contact</a></li>
-            </ul>
-            <p class="text-muted mb-3">Copyright © 2025 Brand</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-                        </svg></a></li>
-                <li class="list-inline-item"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-instagram">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                            <path d="M16.5 7.5l0 .01"></path>
-                        </svg></a></li>
-                <li class="list-inline-item"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-tiktok">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"></path>
-                        </svg></a></li>
-            </ul>
+    
+    <footer class="text-center" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px 0; margin-top: 30px;">
+        <div class="container py-3">
+            <p class="text-white mb-1">Copyright © 2025 NhomToongTenz | Xoul's Era</p>
+            <p class="text-white-50 small">All rights reserved.</p>
         </div>
     </footer>
+    
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/baguetteBox.min.js"></script>

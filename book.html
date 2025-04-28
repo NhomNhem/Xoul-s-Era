@@ -1,229 +1,270 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en" style="font-family: 'Work Sans', sans-serif;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Book - Brand</title>
+    <title>Story - Xoul's Era</title>
+    <meta property="og:image" content="assets/img/Icon/logo.svg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Water+Brush&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&amp;display=swap">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/Icon/logo.svg"/>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md sticky-top bg-body shadow-sm py-md-3" style="height: 59px;">
-        <div class="container"><a class="navbar-brand" href="index.html" style="font-family: 'Work Sans', sans-serif;"><img src="assets/img/Icon/logo.svg" width="59" height="50" style="font-family: 'Work Sans', sans-serif;">NhomToongTenz</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-family: 'Work Sans', sans-serif;"><span class="visually-hidden" style="font-family: 'Work Sans', sans-serif;">Toggle navigation</span><span class="navbar-toggler-icon" style="font-family: 'Work Sans', sans-serif;"></span></button>
+<body class="overview-page">
+    <nav class="navbar navbar-expand-md sticky-top py-md-3" style="background-color: rgba(0, 0, 0, 0.7); height: 59px;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">
+                <img src="assets/img/Icon/logo.svg" width="59" height="50" style="font-family: 'Work Sans', sans-serif;">NhomToongTenz
+            </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-family: 'Work Sans', sans-serif;">
+                <span class="visually-hidden" style="font-family: 'Work Sans', sans-serif;">Toggle navigation</span>
+                <span class="navbar-toggler-icon" style="font-family: 'Work Sans', sans-serif;"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navcol-1" style="font-family: 'Work Sans', sans-serif;">
                 <ul class="navbar-nav mx-auto" style="font-family: 'Work Sans', sans-serif;">
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="/index.html" style="font-family: 'Work Sans', sans-serif;">Overview</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="/book.html" style="font-family: 'Work Sans', sans-serif;">World</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">Combat</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">Asset</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">Power</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">Story</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="/contacts.html" style="font-family: 'Work Sans', sans-serif;">About</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">Overview</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="world.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">World</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="combat.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Combat</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="asset.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Asset</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="book.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Story</a></li>
+                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="contacts.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <section class="text-center py-5 mb-5">
-        <div class="container">
+    
+    <div class="container overview-container">
+        <h1 class="overview-title">Story & Lore</h1>
+        
+        <div class="overview-buttons">
+            <a href="#main-story" class="overview-button">Main Story</a>
+            <a href="#origins" class="overview-button">Origins</a>
+            <a href="#characters" class="overview-button">Characters</a>
+            <a href="#quests" class="overview-button">Quests</a>
+        </div>
+        
+        <!-- Main Story Section -->
+        <div class="overview-content" id="main-story">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-5">
-                        <div class="mb-4">
-                            <h1>Vương Quốc Leto&nbsp;</h1>
-                            <hr>
-                        </div>
-                        <p class="lead">Vương quốc của ánh sáng&nbsp;</p>
+                    <div class="mb-4">
+                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Câu Chuyện Chính</h2>
+                        <hr>
                     </div>
                 </div>
-                <div class="col-12 col-xl-10 mx-auto" data-bss-baguettebox="">
-                    <div class="row gx-2 gy-2 gx-md-2 gy-md-0 mb-5">
-                        <div class="col-md-8 position-relative"><a class="stretched-link" href="assets/img/book-1.webp"></a><img class="img-fluid" src="assets/img/Leto1.png" width="522" height="387"></div>
-                        <div class="col">
-                            <div class="row gx-2 gx-md-0 gy-md-2 row-cols-1 row-cols-sm-2 row-cols-md-1">
-                                <div class="col position-relative"><a class="stretched-link" href="assets/img/book-2.webp"><img class="img-fluid" src="assets/img/image.png" width="303" height="221"></a></div>
-                                <div class="col position-relative"><a class="stretched-link" href="assets/img/book-3.webp"><img class="img-fluid" src="assets/img/leto2.png" width="303" height="160"></a></div>
-                            </div>
-                        </div>
+                
+                <div class="col-md-8 mx-auto">
+                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; margin-bottom: 30px;">
+                        <p style="font-family: Merienda, serif; color: #ffffff; text-align: justify;">
+                            Trong một thế giới pixel art nhuốm màu u tối, nơi Lõi Xoul's sơ khai bị vấy bẩn và văn hóa Việt cổ xưa đang dần tàn lụi.
+                        </p>
+                        
+                        <p style="color: #ffffff; text-align: justify;">
+                            Xoul's Era lấy bối cảnh trong một vũ trụ giả tưởng nơi bốn vương quốc - Leto, Uranastra, Origin và Xylos - cùng tồn tại trong một sự cân bằng mỏng manh. Trọng tâm của thế giới là Lõi Xoul's, một nguồn năng lượng cổ xưa đã duy trì sự hài hòa giữa các vùng đất trong hàng thiên niên kỷ.
+                        </p>
+                        
+                        <p style="color: #ffffff; text-align: justify;">
+                            Khi câu chuyện bắt đầu, Lõi Xoul's đang dần bị nhiễm độc bởi một thế lực bí ẩn, gây ra sự biến dạng của các sinh vật và làm gia tăng xung đột giữa các vương quốc. Người chơi vào vai một nhân vật trẻ tuổi đến từ một ngôi làng nhỏ tại vương quốc Leto, người bất ngờ phát hiện ra khả năng kết nối đặc biệt với Lõi Xoul's.
+                        </p>
+                        
+                        <p style="color: #ffffff; text-align: justify;">
+                            Hành trình của người chơi sẽ đưa họ qua các vùng đất đa dạng, từ vương quốc ánh sáng Leto đến vùng sa mạc Uranastra, từ những ngọn núi tuyết của Origin đến vương quốc bóng tối Xylos. Trên đường đi, họ sẽ gặp gỡ đồng minh, đối đầu với kẻ thù và dần khám phá ra sự thật về nguồn gốc của chính mình cũng như bí mật đằng sau sự tha hóa của Lõi Xoul's.
+                        </p>
                     </div>
-                </div>
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="row text-start">
-                        <div class="col mx-auto">
-                            <p></p>
-                            <figure class="text-center">
-                                <blockquote class="blockquote">
-                                    <p class="mb-0">Nơi mà được các vị thần thiên vị cho sức sống và luôn chìm trong ánh nắng ấm áp quanh năm.</p>
-                                </blockquote>
-                                <figcaption class="blockquote-footer">Xem nhiều hơn</figcaption>
-                            </figure>
-                            <div class="text-center mt-5"></div>
-                        </div>
+                    
+                    <div style="text-align: center;">
+                        <img src="assets/img/xy1.webp" class="img-fluid mb-4" style="max-width: 80%; border-radius: 10px; border: 2px solid rgba(255, 255, 255, 0.3);">
                     </div>
                 </div>
             </div>
         </div>
-        <section class="text-center py-5 mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto">
-                        <div class="mb-5">
-                            <div class="mb-4">
-                                <h1>Vương Quốc Uranastra<br><br></h1>
-                                <hr>
+        
+        <!-- Origins Section -->
+        <div class="overview-content" id="origins">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="mb-4">
+                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Nguồn Gốc Thế Giới</h2>
+                        <hr>
+                    </div>
+                </div>
+                
+                <div class="col-md-8 mx-auto">
+                    <div class="row mb-4">
+                        <div class="col-md-5">
+                            <img src="assets/img/Leto1.png" class="img-fluid" style="border-radius: 10px; border: 2px solid rgba(255, 255, 255, 0.3);">
+                        </div>
+                        <div class="col-md-7">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; height: 100%;">
+                                <h4 style="font-family: Merienda, serif; color: #ffffff;">Lõi Xoul's</h4>
+                                <p style="color: #ffffff; text-align: justify;">
+                                    Theo truyền thuyết, Lõi Xoul's được tạo ra bởi năm vị thần cổ đại, những người mang nhiệm vụ bảo vệ cân bằng của vũ trụ. Họ đã tạo ra bốn vương quốc với những đặc tính riêng biệt và đặt Lõi Xoul's ở trung tâm để duy trì sự hài hòa.
+                                </p>
+                                <p style="color: #ffffff; text-align: justify;">
+                                    Mỗi vương quốc được ban cho một mảnh của Lõi, trở thành biểu tượng quyền lực của họ. Tuy nhiên, một nghìn năm trước, một cuộc chiến lớn đã nổ ra và làm rạn nứt mối quan hệ giữa các vương quốc.
+                                </p>
                             </div>
-                            <p class="lead">Vương quốc sa mạc</p>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-10 mx-auto" data-bss-baguettebox="">
-                        <div class="row gx-2 gy-2 gx-md-2 gy-md-0 mb-5">
-                            <div class="col-md-8 position-relative"><a class="stretched-link" href="assets/img/book-1.webp"><img class="img-fluid" src="assets/img/un2.webp" width="406" height="391"></a></div>
-                            <div class="col">
-                                <div class="row gx-2 gx-md-0 gy-md-2 row-cols-1 row-cols-sm-2 row-cols-md-1">
-                                    <div class="col position-relative"><a class="stretched-link" href="assets/img/book-2.webp"><img class="img-fluid" src="assets/img/un3.webp"></a></div>
-                                    <div class="col position-relative"><a class="stretched-link" href="assets/img/book-3.webp"><img class="img-fluid" src="assets/img/un1.webp"></a></div>
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; margin-bottom: 30px;">
+                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Yếu Tố Văn Hóa Việt Nam</h4>
+                        <p style="color: #ffffff; text-align: justify;">
+                            Xoul's Era kết hợp nhiều yếu tố từ văn hóa và thần thoại Việt Nam. Những truyền thuyết về Lạc Long Quân và Âu Cơ, câu chuyện về thần Kim Quy và thanh gươm thần, cùng nhiều biểu tượng văn hóa truyền thống khác đã được tái hiện trong thế giới game.
+                        </p>
+                        <p style="color: #ffffff; text-align: justify;">
+                            Kiến trúc của các đền đài trong vương quốc Leto lấy cảm hứng từ đền chùa thời Lý - Trần, trong khi tín ngưỡng thờ cúng tổ tiên và các vị thần tự nhiên cũng được phản ánh qua hệ thống nghi lễ và phong tục của người dân trong game.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Characters Section -->
+        <div class="overview-content" id="characters">
+            <div class="row">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="mb-4">
+                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Nhân Vật Chính</h2>
+                        <hr>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-xl-10 mx-auto">
+                    <div class="row mb-4">
+                        <!-- Character 1 -->
+                        <div class="col-md-6 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/leto2.png" class="img-fluid mb-3" style="max-height: 200px;">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Linh</h4>
+                                        <p style="font-style: italic; color: #aaa;">Nhân vật chính</p>
+                                        <p style="color: #ffffff; text-align: left;">
+                                            Một chiến binh trẻ từ vương quốc Leto với khả năng kết nối với Lõi Xoul's. Linh phát hiện ra nguồn gốc bí ẩn của mình liên quan đến sự sáng tạo ban đầu của thế giới.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Character 2 -->
+                        <div class="col-md-6 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/CentaurLadyLabeledWindStorm.gif" class="img-fluid mb-3" style="max-height: 200px;">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Sahara</h4>
+                                        <p style="font-style: italic; color: #aaa;">Đồng minh</p>
+                                        <p style="color: #ffffff; text-align: left;">
+                                            Một cung thủ tài ba từ sa mạc Uranastra, Sahara sở hữu bí mật về lịch sử của Lõi Xoul's và tham gia vào hành trình với Linh để cứu thế giới.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-10 col-lg-8 mx-auto">
-                        <div class="row text-start">
-                            <div class="col mx-auto">
-                                <p></p>
-                                <figure class="text-center">
-                                    <blockquote class="blockquote">
-                                        <p class="mb-0">Vương quốc với sự khô cằn và những đồi núi hùng vĩ nơi mà giao thương phát triển nhất so với các quốc gia khác.</p>
-                                    </blockquote>
-                                    <figcaption class="blockquote-footer">Xem thêm</figcaption>
-                                </figure>
-                                <div class="text-center mt-5"></div>
+                    
+                    <div class="row">
+                        <!-- Character 3 -->
+                        <div class="col-md-6 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/op3.png" class="img-fluid mb-3" style="max-height: 200px;">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Frost</h4>
+                                        <p style="font-style: italic; color: #aaa;">Đồng minh</p>
+                                        <p style="color: #ffffff; text-align: left;">
+                                            Pháp sư băng giá từ Origin, Frost ban đầu hoài nghi về nhiệm vụ nhưng dần trở thành người bạn đồng hành đáng tin cậy với kiến thức sâu rộng về ma thuật.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Character 4 -->
+                        <div class="col-md-6 mb-4">
+                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%;">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/xy2.webp" class="img-fluid mb-3" style="max-height: 200px;">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Umbra</h4>
+                                        <p style="font-style: italic; color: #aaa;">Phản diện</p>
+                                        <p style="color: #ffffff; text-align: left;">
+                                            Thủ lĩnh bí ẩn của vương quốc Xylos, Umbra tìm cách chiếm đoạt sức mạnh của Lõi Xoul's và có mối liên hệ sâu xa với quá khứ của thế giới.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </section>
-    <section class="text-center py-5 mb-5">
-        <div class="container">
+        </div>
+        
+        <!-- Quests Section -->
+        <div class="overview-content" id="quests">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-5">
-                        <div class="mb-4">
-                            <h1>Vương Quốc Origin<br><br></h1>
-                            <hr>
-                        </div>
-                        <p class="lead">Vương Quốc bão tuyết</p>
+                    <div class="mb-4">
+                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Nhiệm Vụ & Hành Trình</h2>
+                        <hr>
                     </div>
-                </div>
-                <div class="col-12 col-xl-10 mx-auto" data-bss-baguettebox="">
-                    <div class="row gx-2 gy-2 gx-md-2 gy-md-0 mb-5">
-                        <div class="col-md-8 position-relative"><a class="stretched-link" href="assets/img/book-1.webp"><img class="img-fluid" src="assets/img/op1.webp" width="615" height="460"></a></div>
-                        <div class="col">
-                            <div class="row gx-2 gx-md-0 gy-md-2 row-cols-1 row-cols-sm-2 row-cols-md-1">
-                                <div class="col position-relative"><a class="stretched-link" href="assets/img/book-2.webp"><img class="img-fluid" src="assets/img/op3.png" width="223" height="313"></a></div>
-                                <div class="col position-relative"><a class="stretched-link" href="assets/img/book-3.webp"><img class="img-fluid" src="assets/img/op2.png" width="223" height="164"></a></div>
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; color: #ffffff; margin-bottom: 30px;">
+                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Cốt Truyện Chính</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ol>
+                                    <li>Khám phá làng quê và phát hiện khả năng kết nối với Lõi Xoul's</li>
+                                    <li>Gặp gỡ Sagacia - người cố vấn già và học về lịch sử của thế giới</li>
+                                    <li>Hành trình đến thủ đô vương quốc Leto để cảnh báo về nguy cơ</li>
+                                    <li>Tìm kiếm các mảnh của Lõi Xoul's tại các vương quốc</li>
+                                </ol>
+                            </div>
+                            <div class="col-md-6">
+                                <ol start="5">
+                                    <li>Khám phá sa mạc Uranastra và gặp gỡ Sahara</li>
+                                    <li>Vượt qua băng giá của Origin để tìm kiếm Frost</li>
+                                    <li>Xâm nhập vào vương quốc bóng tối Xylos</li>
+                                    <li>Đối đầu với Umbra và hồi phục Lõi Xoul's</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="row text-start">
-                        <div class="col mx-auto">
-                            <figure class="text-center">
-                                <blockquote class="blockquote">
-                                    <p class="mb-0">Vương quốc tràn ngập trông bão tuyết và đồ núi hiểm trở khiến đường đi đến đó vô cùng khó khăn...</p>
-                                </blockquote>
-                                <figcaption class="blockquote-footer">Xem thêm</figcaption>
-                            </figure>
-                            <div class="text-center mt-5"></div>
-                        </div>
+                    
+                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; color: #ffffff;">
+                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Nhiệm Vụ Phụ</h4>
+                        <p>
+                            Bên cạnh cốt truyện chính, người chơi có thể khám phá nhiều nhiệm vụ phụ giúp họ hiểu sâu hơn về lịch sử, văn hóa và con người trong thế giới Xoul's Era:
+                        </p>
+                        <ul>
+                            <li>Tìm kiếm các văn tự cổ xưa về nguồn gốc của các vương quốc</li>
+                            <li>Giúp đỡ người dân địa phương giải quyết các vấn đề nảy sinh từ sự tha hóa của Lõi Xoul's</li>
+                            <li>Khám phá các đền đài bí ẩn và học hỏi kỹ năng mới</li>
+                            <li>Sưu tầm hiện vật văn hóa và khám phá câu chuyện đằng sau chúng</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="text-center py-5 mb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-5">
-                        <div class="mb-4">
-                            <h1>Vương Quốc Xylos</h1>
-                            <hr>
-                        </div>
-                        <p class="lead">Vương quốc của bống tối</p>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-10 mx-auto" data-bss-baguettebox="">
-                    <div class="row gx-2 gy-2 gx-md-2 gy-md-0 mb-5">
-                        <div class="col-md-8 position-relative"><a class="stretched-link" href="assets/img/book-1.webp"></a><img class="img-fluid" src="assets/img/xy1.webp" width="589" height="413"></div>
-                        <div class="col">
-                            <div class="row gx-2 gx-md-0 gy-md-2 row-cols-1 row-cols-sm-2 row-cols-md-1">
-                                <div class="col position-relative"><a class="stretched-link" href="assets/img/book-2.webp"><img class="img-fluid" src="assets/img/xy2.webp" width="267" height="226"></a></div>
-                                <div class="col position-relative"><a class="stretched-link" href="assets/img/book-3.webp"><img class="img-fluid" src="assets/img/xy3.webp" width="271" height="176"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="row text-start">
-                        <div class="col mx-auto">
-                            <p></p>
-                            <figure class="text-center">
-                                <blockquote class="blockquote">
-                                    <p class="mb-0">Nơi mà ánh sáng không thể lọt đến, nơi quanh năm chìm vào bống tối nơi mà nhiều sinh vật hắt ám xuất hiện.</p>
-                                </blockquote>
-                                <figcaption class="blockquote-footer">Xem nhiều hơn</figcaption>
-                            </figure>
-                            <div class="text-center mt-5"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="text-center bg-body-tertiary">
-        <div class="container py-4 py-lg-5">
-            <h1 class="fs-4 text-body mb-4"> <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-components fs-4 text-body me-2">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 12l3 3l3 -3l-3 -3z"></path>
-                    <path d="M15 12l3 3l3 -3l-3 -3z"></path>
-                    <path d="M9 6l3 3l3 -3l-3 -3z"></path>
-                    <path d="M9 18l3 3l3 -3l-3 -3z"></path>
-                </svg>NhomTongTenzz</h1>
-            <ul class="list-inline">
-                <li class="list-inline-item me-3"><a class="link-body-emphasis" href="#">Blog</a></li>
-                <li class="list-inline-item me-3"><a class="link-body-emphasis" href="#">Book</a></li>
-                <li class="list-inline-item me-3"><a class="link-body-emphasis" href="#">About</a></li>
-                <li class="list-inline-item me-3"><a class="link-body-emphasis" href="#">Privacy</a></li>
-                <li class="list-inline-item"><a class="link-body-emphasis" href="#">Contact</a></li>
-            </ul>
-            <p class="text-muted mb-3">Copyright © 2025 Brand</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-x">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-                            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-                        </svg></a></li>
-                <li class="list-inline-item"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-instagram">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                            <path d="M16.5 7.5l0 .01"></path>
-                        </svg></a></li>
-                <li class="list-inline-item"><a class="link-body-emphasis" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-tiktok">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"></path>
-                        </svg></a></li>
-            </ul>
-        </div>
-    </footer>
+    </div>
+    
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/baguetteBox.min.js"></script>
