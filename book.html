@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en" style="font-family: 'Work Sans', sans-serif;">
-
+<html data-bs-theme="light" lang="vi" style="font-family: 'Work Sans', sans-serif;">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Story - Xoul's Era</title>
+    <title>Cốt Truyện - Xoul's Era</title>
     <meta property="og:image" content="assets/img/Icon/logo.svg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -14,261 +13,234 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&amp;display=swap">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/shared.css">
     <link rel="icon" type="image/x-icon" href="assets/img/Icon/logo.svg"/>
+    <style>
+        .intro-nav-item {
+            width: 100%;
+            text-align: center;
+            font-family: 'Merienda', serif;
+            font-size: 16px;
+            background: #FFD040;
+            color: #18100a;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            box-shadow: none;
+            transition: background 0.3s, color 0.3s;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+        .intro-nav-item.active,
+        .intro-nav-item:focus,
+        .intro-nav-item:hover {
+            background: #FFA040;
+            color: #fff;
+        }
+    </style>
 </head>
-
-<body class="overview-page">
-    <nav class="navbar navbar-expand-md sticky-top py-md-3" style="background-color: rgba(0, 0, 0, 0.7); height: 59px;">
-        <div class="container">
-            <a class="navbar-brand" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">
-                <img src="assets/img/Icon/logo.svg" width="59" height="50" style="font-family: 'Work Sans', sans-serif;">NhomToongTenz
-            </a>
-            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-family: 'Work Sans', sans-serif;">
-                <span class="visually-hidden" style="font-family: 'Work Sans', sans-serif;">Toggle navigation</span>
-                <span class="navbar-toggler-icon" style="font-family: 'Work Sans', sans-serif;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="font-family: 'Work Sans', sans-serif;">
-                <ul class="navbar-nav mx-auto" style="font-family: 'Work Sans', sans-serif;">
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">Overview</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="world.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">World</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="combat.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Combat</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="asset.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Asset</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="book.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Story</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="contacts.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">About</a></li>
+<body>
+<div class="container">
+    <div class="main-header">
+        <div class="navigation-tabs">
+            <a href="index.html" class="nav-tab">Overview</a>
+            <a href="world.html" class="nav-tab">World</a>
+            <a href="combat.html" class="nav-tab">Combat</a>
+            <a href="asset.html" class="nav-tab">Assets</a>
+            <a href="power.html" class="nav-tab">Power</a>
+            <a href="glory.html" class="nav-tab">Glory</a>
+            <a href="cycle.html" class="nav-tab">Cycle</a>
+            <a href="book.html" class="nav-tab active">Lore</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1 class="page-title">Cốt Truyện</h1>
+    <div style="display: flex; min-height: 100vh;">
+        <div style="min-width: 160px; max-width: 180px; display: flex; flex-direction: column; align-items: flex-start;">
+            <nav style="position: sticky; top: 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; width: 140px; margin-left: 0;">
+                <a href="#tong-quan" class="intro-nav-item active">TỔNG QUAN</a>
+                <a href="#than-thoai" class="intro-nav-item">THẦN THOẠI & TRUYỀN THUYẾT</a>
+                <a href="#nhan-vat" class="intro-nav-item">NHÂN VẬT LỊCH SỬ</a>
+                <a href="#su-kien" class="intro-nav-item">SỰ KIỆN LỚN</a>
+                <a href="#di-tich" class="intro-nav-item">DI TÍCH & BÍ ẨN</a>
+            </nav>
+        </div>
+        <div class="container" style="flex: 1;">
+            <section id="tong-quan">
+                <div class="content-card">
+                    <h2 class="section-title">Tổng Quan Cốt Truyện</h2>
+                    <p class="content-text">
+                        Xoul's Era là một thế giới fantasy rộng lớn, nơi các vị thần, anh hùng và những sinh vật huyền thoại cùng tồn tại. Lịch sử của thế giới này được dệt nên từ những cuộc chiến tranh thần thánh, sự trỗi dậy và suy tàn của các vương quốc, cùng những bí ẩn chưa từng được giải đáp.
+                    </p>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <ul class="content-text-list">
+                                <li><b>Khởi nguyên:</b> Thế giới được tạo ra bởi thần Xoul, nguồn gốc của mọi sự sống và phép thuật.</li>
+                                <li><b>Thời đại thần thoại:</b> Các vị thần và sinh vật cổ đại thống trị, để lại nhiều di tích và truyền thuyết.</li>
+                                <li><b>Kỷ nguyên anh hùng:</b> Con người, elf, beastman... nổi dậy, lập nên các vương quốc, đối đầu với thế lực bóng tối.</li>
+                                <li><b>Hiện tại:</b> Thế giới chia cắt, các vương quốc tranh đấu, bí ẩn về sự biến mất của thần Xoul vẫn chưa có lời giải.</li>
+                            </ul>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/book-1.webp" alt="Tổng quan cốt truyện" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="than-thoai">
+                <div class="content-card">
+                    <h2 class="section-title">Thần Thoại & Truyền Thuyết</h2>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <h3 class="sub-section-title">Thần Xoul</h3>
+                            <p class="content-text">Đấng sáng tạo tối cao, mang lại sự sống và phép thuật cho thế giới. Sự biến mất bí ẩn của Xoul là khởi nguồn cho mọi biến động.</p>
+                            <h3 class="sub-section-title">Các Diệt Thần Trụ</h3>
+                            <p class="content-text">Những cột trụ khổng lồ được cho là nơi các vị thần từng ngự trị, hiện là trung tâm của nhiều bí ẩn và sức mạnh cổ xưa.</p>
+                            <h3 class="sub-section-title">Truyền thuyết về Thánh Kiếm, Nhân Mã, Phù Thủy...</h3>
+                            <p class="content-text">Các truyền thuyết về những anh hùng đầu tiên, các vật phẩm thần thoại và những trận chiến định mệnh.</p>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/book-2.webp" alt="Thần thoại và truyền thuyết" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="nhan-vat">
+                <div class="content-card">
+                    <h2 class="section-title">Nhân Vật Lịch Sử</h2>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <ul class="content-text-list">
+                                <li><b>Joanna d'Arc:</b> Nữ chiến binh huyền thoại, người lãnh đạo cuộc khởi nghĩa chống lại thế lực bóng tối.</li>
+                                <li><b>Centaur Lady:</b> Anh hùng nhân mã, biểu tượng cho tự do và sức mạnh của rừng Xylos.</li>
+                                <li><b>Archmage Leto:</b> Phù thủy vĩ đại, người sáng lập vương quốc Leto và bảo vệ tri thức cổ đại.</li>
+                                <li><b>Origin King:</b> Vị vua đầu tiên của Origin, người đã đóng băng bóng tối dưới lớp băng vĩnh cửu.</li>
+                                <li><b>Uranastra Nomad:</b> Thủ lĩnh du mục, người dẫn dắt dân tộc vượt qua sa mạc khắc nghiệt.</li>
+                            </ul>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/book-3.webp" alt="Nhân vật lịch sử" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="su-kien">
+                <div class="content-card">
+                    <h2 class="section-title">Sự Kiện Lớn</h2>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <ul class="content-text-list">
+                                <li><b>Cuộc chiến Thần - Người:</b> Trận chiến giữa các vị thần và loài người, thay đổi cục diện thế giới.</li>
+                                <li><b>Đêm Bóng Tối Vĩnh Cửu:</b> Sự kiện khi bóng tối bao trùm, các vương quốc phải liên minh để sinh tồn.</li>
+                                <li><b>Thời đại Chia cắt:</b> Thế giới bị phân tách, các vương quốc hình thành ranh giới riêng.</li>
+                                <li><b>Sự biến mất của Xoul:</b> Bí ẩn lớn nhất, mở ra kỷ nguyên mới đầy bất ổn.</li>
+                            </ul>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/articles/Screenshot 2025-04-26 at 19.39.18.webp" alt="Sự kiện lớn" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="di-tich">
+                <div class="content-card">
+                    <h2 class="section-title">Di Tích & Bí Ẩn</h2>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <ul class="content-text-list">
+                                <li><b>Diệt Thần Trụ:</b> Những công trình cổ đại, trung tâm của các bí ẩn và sức mạnh thần thánh.</li>
+                                <li><b>Thư viện Leto:</b> Nơi lưu giữ tri thức cổ xưa, chìa khóa giải mã lịch sử thế giới.</li>
+                                <li><b>Đền Origin:</b> Nơi diễn ra các nghi lễ băng giá, kết nối với thần linh phương Bắc.</li>
+                                <li><b>Ốc đảo Uranastra:</b> Vùng đất huyền bí giữa sa mạc, nơi ẩn giấu kho báu và phép thuật cổ đại.</li>
+                                <li><b>Rừng Xylos:</b> Khu rừng bất tận, nơi sinh sống của các sinh vật huyền thoại.</li>
+                            </ul>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/Screenshot 2025-04-27 201705.png" alt="Di tích và bí ẩn" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<footer class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.9);">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col">
+                <p class="text-white my-2" style="font-family: 'Work Sans', sans-serif;">Copyright&nbsp;©&nbsp;Xoul's Era 2025</p>
+            </div>
+            <div class="col">
+                <ul class="list-inline my-2">
+                    <li class="list-inline-item me-4">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-4">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    
-    <div class="container overview-container">
-        <h1 class="overview-title">Story & Lore</h1>
-        
-        <div class="overview-buttons">
-            <a href="#main-story" class="overview-button">Main Story</a>
-            <a href="#origins" class="overview-button">Origins</a>
-            <a href="#characters" class="overview-button">Characters</a>
-            <a href="#quests" class="overview-button">Quests</a>
-        </div>
-        
-        <!-- Main Story Section -->
-        <div class="overview-content" id="main-story">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-4">
-                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Câu Chuyện Chính</h2>
-                        <hr>
-                    </div>
-                </div>
-                
-                <div class="col-md-8 mx-auto">
-                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; margin-bottom: 30px;">
-                        <p style="font-family: Merienda, serif; color: #ffffff; text-align: justify;">
-                            Trong một thế giới pixel art nhuốm màu u tối, nơi Lõi Xoul's sơ khai bị vấy bẩn và văn hóa Việt cổ xưa đang dần tàn lụi.
-                        </p>
-                        
-                        <p style="color: #ffffff; text-align: justify;">
-                            Xoul's Era lấy bối cảnh trong một vũ trụ giả tưởng nơi bốn vương quốc - Leto, Uranastra, Origin và Xylos - cùng tồn tại trong một sự cân bằng mỏng manh. Trọng tâm của thế giới là Lõi Xoul's, một nguồn năng lượng cổ xưa đã duy trì sự hài hòa giữa các vùng đất trong hàng thiên niên kỷ.
-                        </p>
-                        
-                        <p style="color: #ffffff; text-align: justify;">
-                            Khi câu chuyện bắt đầu, Lõi Xoul's đang dần bị nhiễm độc bởi một thế lực bí ẩn, gây ra sự biến dạng của các sinh vật và làm gia tăng xung đột giữa các vương quốc. Người chơi vào vai một nhân vật trẻ tuổi đến từ một ngôi làng nhỏ tại vương quốc Leto, người bất ngờ phát hiện ra khả năng kết nối đặc biệt với Lõi Xoul's.
-                        </p>
-                        
-                        <p style="color: #ffffff; text-align: justify;">
-                            Hành trình của người chơi sẽ đưa họ qua các vùng đất đa dạng, từ vương quốc ánh sáng Leto đến vùng sa mạc Uranastra, từ những ngọn núi tuyết của Origin đến vương quốc bóng tối Xylos. Trên đường đi, họ sẽ gặp gỡ đồng minh, đối đầu với kẻ thù và dần khám phá ra sự thật về nguồn gốc của chính mình cũng như bí mật đằng sau sự tha hóa của Lõi Xoul's.
-                        </p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <img src="assets/img/xy1.webp" class="img-fluid mb-4" style="max-width: 80%; border-radius: 10px; border: 2px solid rgba(255, 255, 255, 0.3);">
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Origins Section -->
-        <div class="overview-content" id="origins">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-4">
-                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Nguồn Gốc Thế Giới</h2>
-                        <hr>
-                    </div>
-                </div>
-                
-                <div class="col-md-8 mx-auto">
-                    <div class="row mb-4">
-                        <div class="col-md-5">
-                            <img src="assets/img/Leto1.png" class="img-fluid" style="border-radius: 10px; border: 2px solid rgba(255, 255, 255, 0.3);">
-                        </div>
-                        <div class="col-md-7">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; height: 100%;">
-                                <h4 style="font-family: Merienda, serif; color: #ffffff;">Lõi Xoul's</h4>
-                                <p style="color: #ffffff; text-align: justify;">
-                                    Theo truyền thuyết, Lõi Xoul's được tạo ra bởi năm vị thần cổ đại, những người mang nhiệm vụ bảo vệ cân bằng của vũ trụ. Họ đã tạo ra bốn vương quốc với những đặc tính riêng biệt và đặt Lõi Xoul's ở trung tâm để duy trì sự hài hòa.
-                                </p>
-                                <p style="color: #ffffff; text-align: justify;">
-                                    Mỗi vương quốc được ban cho một mảnh của Lõi, trở thành biểu tượng quyền lực của họ. Tuy nhiên, một nghìn năm trước, một cuộc chiến lớn đã nổ ra và làm rạn nứt mối quan hệ giữa các vương quốc.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; margin-bottom: 30px;">
-                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Yếu Tố Văn Hóa Việt Nam</h4>
-                        <p style="color: #ffffff; text-align: justify;">
-                            Xoul's Era kết hợp nhiều yếu tố từ văn hóa và thần thoại Việt Nam. Những truyền thuyết về Lạc Long Quân và Âu Cơ, câu chuyện về thần Kim Quy và thanh gươm thần, cùng nhiều biểu tượng văn hóa truyền thống khác đã được tái hiện trong thế giới game.
-                        </p>
-                        <p style="color: #ffffff; text-align: justify;">
-                            Kiến trúc của các đền đài trong vương quốc Leto lấy cảm hứng từ đền chùa thời Lý - Trần, trong khi tín ngưỡng thờ cúng tổ tiên và các vị thần tự nhiên cũng được phản ánh qua hệ thống nghi lễ và phong tục của người dân trong game.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Characters Section -->
-        <div class="overview-content" id="characters">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-4">
-                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Nhân Vật Chính</h2>
-                        <hr>
-                    </div>
-                </div>
-                
-                <div class="col-12 col-xl-10 mx-auto">
-                    <div class="row mb-4">
-                        <!-- Character 1 -->
-                        <div class="col-md-6 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%;">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="assets/img/leto2.png" class="img-fluid mb-3" style="max-height: 200px;">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Linh</h4>
-                                        <p style="font-style: italic; color: #aaa;">Nhân vật chính</p>
-                                        <p style="color: #ffffff; text-align: left;">
-                                            Một chiến binh trẻ từ vương quốc Leto với khả năng kết nối với Lõi Xoul's. Linh phát hiện ra nguồn gốc bí ẩn của mình liên quan đến sự sáng tạo ban đầu của thế giới.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Character 2 -->
-                        <div class="col-md-6 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%;">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="assets/img/CentaurLadyLabeledWindStorm.gif" class="img-fluid mb-3" style="max-height: 200px;">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Sahara</h4>
-                                        <p style="font-style: italic; color: #aaa;">Đồng minh</p>
-                                        <p style="color: #ffffff; text-align: left;">
-                                            Một cung thủ tài ba từ sa mạc Uranastra, Sahara sở hữu bí mật về lịch sử của Lõi Xoul's và tham gia vào hành trình với Linh để cứu thế giới.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row">
-                        <!-- Character 3 -->
-                        <div class="col-md-6 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%;">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="assets/img/op3.png" class="img-fluid mb-3" style="max-height: 200px;">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Frost</h4>
-                                        <p style="font-style: italic; color: #aaa;">Đồng minh</p>
-                                        <p style="color: #ffffff; text-align: left;">
-                                            Pháp sư băng giá từ Origin, Frost ban đầu hoài nghi về nhiệm vụ nhưng dần trở thành người bạn đồng hành đáng tin cậy với kiến thức sâu rộng về ma thuật.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Character 4 -->
-                        <div class="col-md-6 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%;">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="assets/img/xy2.webp" class="img-fluid mb-3" style="max-height: 200px;">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Umbra</h4>
-                                        <p style="font-style: italic; color: #aaa;">Phản diện</p>
-                                        <p style="color: #ffffff; text-align: left;">
-                                            Thủ lĩnh bí ẩn của vương quốc Xylos, Umbra tìm cách chiếm đoạt sức mạnh của Lõi Xoul's và có mối liên hệ sâu xa với quá khứ của thế giới.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Quests Section -->
-        <div class="overview-content" id="quests">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-4">
-                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Nhiệm Vụ & Hành Trình</h2>
-                        <hr>
-                    </div>
-                    
-                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; color: #ffffff; margin-bottom: 30px;">
-                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Cốt Truyện Chính</h4>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ol>
-                                    <li>Khám phá làng quê và phát hiện khả năng kết nối với Lõi Xoul's</li>
-                                    <li>Gặp gỡ Sagacia - người cố vấn già và học về lịch sử của thế giới</li>
-                                    <li>Hành trình đến thủ đô vương quốc Leto để cảnh báo về nguy cơ</li>
-                                    <li>Tìm kiếm các mảnh của Lõi Xoul's tại các vương quốc</li>
-                                </ol>
-                            </div>
-                            <div class="col-md-6">
-                                <ol start="5">
-                                    <li>Khám phá sa mạc Uranastra và gặp gỡ Sahara</li>
-                                    <li>Vượt qua băng giá của Origin để tìm kiếm Frost</li>
-                                    <li>Xâm nhập vào vương quốc bóng tối Xylos</li>
-                                    <li>Đối đầu với Umbra và hồi phục Lõi Xoul's</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; color: #ffffff;">
-                        <h4 style="font-family: Merienda, serif; color: #ffffff;">Nhiệm Vụ Phụ</h4>
-                        <p>
-                            Bên cạnh cốt truyện chính, người chơi có thể khám phá nhiều nhiệm vụ phụ giúp họ hiểu sâu hơn về lịch sử, văn hóa và con người trong thế giới Xoul's Era:
-                        </p>
-                        <ul>
-                            <li>Tìm kiếm các văn tự cổ xưa về nguồn gốc của các vương quốc</li>
-                            <li>Giúp đỡ người dân địa phương giải quyết các vấn đề nảy sinh từ sự tha hóa của Lõi Xoul's</li>
-                            <li>Khám phá các đền đài bí ẩn và học hỏi kỹ năng mới</li>
-                            <li>Sưu tầm hiện vật văn hóa và khám phá câu chuyện đằng sau chúng</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col">
+                <a class="text-white my-2" href="privacy.html" style="font-family: 'Work Sans', sans-serif;">Privacy Policy</a>
             </div>
         </div>
     </div>
-    
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/template.js"></script>
+</footer>
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.classList.contains('intro-nav-item')) {
+                e.preventDefault();
+                document.querySelectorAll('.intro-nav-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    // Scrollspy for intro-nav
+    window.addEventListener('scroll', function() {
+        const sections = ['#tong-quan', '#than-thoai', '#nhan-vat', '#su-kien', '#di-tich'];
+        let scrollPos = window.scrollY || document.documentElement.scrollTop;
+        for (let i = sections.length - 1; i >= 0; i--) {
+            let section = document.querySelector(sections[i]);
+            if (section && section.offsetTop - 120 <= scrollPos) {
+                document.querySelectorAll('.intro-nav-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                let navBtn = document.querySelector('.intro-nav-item[href="' + sections[i] + '"]');
+                if (navBtn) navBtn.classList.add('active');
+                break;
+            }
+        }
+    });
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/baguetteBox.min.js"></script>
+<script src="assets/js/template.js"></script>
 </body>
-
 </html>

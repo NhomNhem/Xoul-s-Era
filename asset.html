@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en" style="font-family: 'Work Sans', sans-serif;">
-
+<html data-bs-theme="light" lang="vi" style="font-family: 'Work Sans', sans-serif;">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Assets - Xoul's Era</title>
+    <title>Tài Sản - Xoul's Era</title>
     <meta property="og:image" content="assets/img/Icon/logo.svg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -14,287 +13,220 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&amp;display=swap">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/shared.css">
     <link rel="icon" type="image/x-icon" href="assets/img/Icon/logo.svg"/>
+    <style>
+        .intro-nav-item {
+            width: 100%;
+            text-align: center;
+            font-family: 'Merienda', serif;
+            font-size: 16px;
+            background: #FFD040;
+            color: #18100a;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            box-shadow: none;
+            transition: background 0.3s, color 0.3s;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+        .intro-nav-item.active,
+        .intro-nav-item:focus,
+        .intro-nav-item:hover {
+            background: #FFA040;
+            color: #fff;
+        }
+    </style>
 </head>
-
-<body class="overview-page">
-    <nav class="navbar navbar-expand-md sticky-top py-md-3" style="background-color: rgba(0, 0, 0, 0.7); height: 59px;">
-        <div class="container">
-            <a class="navbar-brand" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">
-                <img src="assets/img/Icon/logo.svg" width="59" height="50" style="font-family: 'Work Sans', sans-serif;">NhomToongTenz
-            </a>
-            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-family: 'Work Sans', sans-serif;">
-                <span class="visually-hidden" style="font-family: 'Work Sans', sans-serif;">Toggle navigation</span>
-                <span class="navbar-toggler-icon" style="font-family: 'Work Sans', sans-serif;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="font-family: 'Work Sans', sans-serif;">
-                <ul class="navbar-nav mx-auto" style="font-family: 'Work Sans', sans-serif;">
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">Overview</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="world.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">World</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="combat.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Combat</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="asset.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Asset</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="power.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Power</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="glory.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Glory</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="cycle.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Cycle</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="extras.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Extras</a></li>
+<body>
+<div class="container">
+    <div class="main-header">
+        <div class="navigation-tabs">
+            <a href="index.html" class="nav-tab">Overview</a>
+            <a href="world.html" class="nav-tab">World</a>
+            <a href="combat.html" class="nav-tab">Combat</a>
+            <a href="asset.html" class="nav-tab active">Assets</a>
+            <a href="power.html" class="nav-tab">Power</a>
+            <a href="glory.html" class="nav-tab">Glory</a>
+            <a href="cycle.html" class="nav-tab">Cycle</a>
+            <a href="book.html" class="nav-tab">Lore</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1 class="page-title">Tài Sản</h1>
+    <div style="display: flex; min-height: 100vh;">
+        <div style="min-width: 160px; max-width: 180px; display: flex; flex-direction: column; align-items: flex-start;">
+            <nav style="position: sticky; top: 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; width: 140px; margin-left: 0;">
+                <a href="#tong-quan" class="intro-nav-item active">TỔNG QUAN</a>
+                <a href="#phan-loai" class="intro-nav-item">PHÂN LOẠI</a>
+                <a href="#do-hiem" class="intro-nav-item">ĐỘ HIẾM & NÂNG CẤP</a>
+                <a href="#giao-dich" class="intro-nav-item">GIAO DỊCH & SỞ HỮU</a>
+            </nav>
+        </div>
+        <div class="container" style="flex: 1;">
+            <section id="tong-quan">
+                <div class="content-card">
+                    <h2 class="section-title">Tổng Quan Tài Sản</h2>
+                    <p class="content-text">
+                        Trong Xoul's Era, tài sản là tất cả những gì người chơi có thể sở hữu, sử dụng hoặc giao dịch. Bao gồm nhân vật (NFT), trang bị, vật phẩm tiêu hao, nguyên liệu, tiền tệ và nhiều loại tài sản kỹ thuật số khác. Mỗi tài sản đều có giá trị sử dụng, độ hiếm và vai trò riêng trong hành trình phát triển của bạn.
+                    </p>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <ul class="content-text-list">
+                                <li><b>Nhân vật (NFT):</b> Đại diện cho người chơi, có thể nâng cấp, giao dịch.</li>
+                                <li><b>Trang bị:</b> Vũ khí, giáp, phụ kiện giúp tăng sức mạnh nhân vật.</li>
+                                <li><b>Vật phẩm tiêu hao:</b> Bình máu, mana, buff tạm thời.</li>
+                                <li><b>Nguyên liệu:</b> Dùng để chế tạo, nâng cấp trang bị.</li>
+                                <li><b>Tiền tệ:</b> Đơn vị trao đổi trong game (vàng, đá quý...)</li>
+                            </ul>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/Screenshot 2025-04-26 at 19.33.59.png" alt="Tài sản Xoul's Era" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="phan-loai">
+                <div class="content-card">
+                    <h2 class="section-title">Phân Loại Tài Sản</h2>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <h3 class="sub-section-title">Nhân vật (NFT)</h3>
+                            <p class="content-text">Mỗi nhân vật là một NFT duy nhất, có thể giao dịch trên marketplace, nâng cấp, phát triển kỹ năng và trang bị.</p>
+                            <h3 class="sub-section-title">Trang bị</h3>
+                            <p class="content-text">Bao gồm vũ khí, giáp, phụ kiện. Trang bị có thể nâng cấp, cường hóa, khảm nạm và giao dịch.</p>
+                            <h3 class="sub-section-title">Vật phẩm tiêu hao</h3>
+                            <p class="content-text">Các vật phẩm như bình máu, mana, buff, vé sự kiện... sử dụng một lần hoặc có thời hạn.</p>
+                            <h3 class="sub-section-title">Nguyên liệu</h3>
+                            <p class="content-text">Thu thập từ nhiệm vụ, quái vật, sự kiện để chế tạo hoặc nâng cấp trang bị.</p>
+                            <h3 class="sub-section-title">Tiền tệ</h3>
+                            <p class="content-text">Vàng, đá quý, token dùng để giao dịch, mua bán vật phẩm, nâng cấp.</p>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/Screenshot 2025-04-26 at 19.30.49.webp" alt="Phân loại tài sản" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="do-hiem">
+                <div class="content-card">
+                    <h2 class="section-title">Độ Hiếm & Nâng Cấp</h2>
+                    <p class="content-text">Mỗi tài sản đều có cấp độ hiếm (Common, Uncommon, Rare, Epic, Legendary). Độ hiếm càng cao, giá trị và sức mạnh càng lớn. Người chơi có thể nâng cấp, cường hóa, tiến hóa tài sản để tăng giá trị sử dụng và khả năng giao dịch.</p>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <ul class="content-text-list">
+                                <li><b>Nâng cấp:</b> Tăng chỉ số cơ bản của tài sản.</li>
+                                <li><b>Cường hóa:</b> Thêm hiệu ứng đặc biệt hoặc chỉ số phụ.</li>
+                                <li><b>Tiến hóa:</b> Thay đổi hình dạng, mở khóa kỹ năng mới.</li>
+                                <li><b>Khảm nạm:</b> Gắn đá quý, rune để tăng sức mạnh.</li>
+                            </ul>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/Screenshot 2025-04-26 at 19.37.19.webp" alt="Độ hiếm và nâng cấp" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="giao-dich">
+                <div class="content-card">
+                    <h2 class="section-title">Giao Dịch & Sở Hữu</h2>
+                    <p class="content-text">Tài sản NFT và vật phẩm có thể giao dịch tự do trên marketplace hoặc trao đổi trực tiếp giữa người chơi. Hệ thống đảm bảo minh bạch, an toàn và quyền sở hữu thực sự cho người chơi.</p>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <ul class="content-text-list">
+                                <li><b>Marketplace:</b> Nơi mua bán, đấu giá tài sản NFT, trang bị, vật phẩm quý hiếm.</li>
+                                <li><b>Giao dịch trực tiếp:</b> Trao đổi vật phẩm giữa người chơi với nhau.</li>
+                                <li><b>Lịch sử sở hữu:</b> Theo dõi nguồn gốc, lịch sử giao dịch của từng tài sản.</li>
+                                <li><b>Bảo mật:</b> Tài sản được lưu trữ an toàn trên blockchain, không thể bị đánh cắp.</li>
+                            </ul>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img src="assets/img/book-1.webp" alt="Giao dịch tài sản" class="feature-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<footer class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.9);">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col">
+                <p class="text-white my-2" style="font-family: 'Work Sans', sans-serif;">Copyright&nbsp;©&nbsp;Xoul's Era 2025</p>
+            </div>
+            <div class="col">
+                <ul class="list-inline my-2">
+                    <li class="list-inline-item me-4">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-4">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-    
-    <div class="container overview-container">
-        <h1 class="overview-title">Assets</h1>
-        
-        <div class="overview-buttons">
-            <a href="#characters" class="overview-button">Characters</a>
-            <a href="#equipment" class="overview-button">Equipment</a>
-            <a href="#nfts" class="overview-button">NFTs</a>
-            <a href="#collectibles" class="overview-button">Collectibles</a>
-        </div>
-        
-        <div class="row overview-banner">
-            <div class="col-12">
-                <img src="assets/img/Screenshot 2025-04-26 at 19.37.19.webp" class="img-fluid banner-image" alt="Assets Banner">
-            </div>
-        </div>
-        
-        <!-- Characters Section -->
-        <div id="characters">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="overview-content">
-                        <h2 style="font-family: Merienda, serif; color: #ffffff; margin-bottom: 1rem;">Characters</h2>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff;">
-                            Nhân vật trong Xoul's Era không chỉ là avatar trong game mà còn là tài sản số (digital assets) có giá trị thực. 
-                            Mỗi nhân vật có những đặc điểm và khả năng riêng biệt, phù hợp với nhiều phong cách chơi khác nhau.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="asset-gallery mt-4">
-                <div class="asset-item">
-                    <img src="assets/img/leto2.png" class="asset-img" alt="Knight of Leto">
-                    <div class="asset-info">
-                        <h4>Knight of Leto</h4>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            Hiệp sĩ từ vương quốc Leto với khả năng sử dụng Thánh kiếm. Họ được biết đến với khả năng chiến đấu dũng mãnh và lòng trung thành tuyệt đối với vương quốc.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="asset-item">
-                    <img src="assets/img/CentaurLadyLabeledWindStorm.gif" class="asset-img" alt="Archer of Uranastra">
-                    <div class="asset-info">
-                        <h4>Archer of Uranastra</h4>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            Cung thủ đến từ sa mạc Uranastra, nổi tiếng với khả năng bắn cung chính xác và các đòn tấn công phép thuật gió. Họ di chuyển nhanh nhẹn và có tầm đánh xa.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="asset-item">
-                    <img src="assets/img/JoannaDArcIIICastsHolySlash.gif" class="asset-img" alt="Holy Mage">
-                    <div class="asset-info">
-                        <h4>Holy Mage</h4>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            Pháp sư ánh sáng kết hợp giữa phép thuật và khả năng chiến đấu cận chiến. Có thể hồi máu cho đồng đội và tăng sức mạnh khi chiến đấu trong ánh sáng.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section-divider"></div>
-        
-        <!-- Equipment Section -->
-        <div id="equipment">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="overview-content">
-                        <h2 style="font-family: Merienda, serif; color: #ffffff; margin-bottom: 1rem;">Equipment</h2>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff;">
-                            Trong Xoul's Era, trang bị không chỉ quyết định ngoại hình mà còn ảnh hưởng trực tiếp đến khả năng chiến đấu và 
-                            phong cách chơi của nhân vật. Mỗi món đồ đều có thuộc tính và hiệu ứng riêng, có thể được nâng cấp qua thời gian.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-4">
-                <div class="col-md-6">
-                    <div class="world-card">
-                        <h3 style="font-family: Merienda, serif; color: #ffffff;">Vũ khí</h3>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            Vũ khí trong game đa dạng với nhiều loại khác nhau:
-                        </p>
-                        <ul style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            <li><strong>Kiếm:</strong> Gây sát thương cao, phù hợp với chiến đấu cận chiến</li>
-                            <li><strong>Cung:</strong> Tấn công từ xa với độ chính xác cao</li>
-                            <li><strong>Gậy phép:</strong> Phép thuật và khả năng hỗ trợ đồng đội</li>
-                            <li><strong>Song đao:</strong> Tốc độ cao và combo liên hoàn</li>
-                        </ul>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            Mỗi loại vũ khí có thể được nâng cấp qua hệ thống rèn đúc và phù phép.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="world-card">
-                        <h3 style="font-family: Merienda, serif; color: #ffffff;">Áo giáp & Phụ kiện</h3>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            Bộ đồ bảo vệ và các phụ kiện tăng cường:
-                        </p>
-                        <ul style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            <li><strong>Giáp:</strong> Áo giáp, khiên, mũ, găng tay, giày</li>
-                            <li><strong>Trang sức:</strong> Nhẫn, dây chuyền, khuyên tai, mặt nạ</li>
-                            <li><strong>Bùa hộ mệnh:</strong> Tăng thuộc tính và cung cấp khả năng đặc biệt</li>
-                            <li><strong>Ấn tín:</strong> Hiệu ứng đặc biệt và thẩm mỹ độc đáo</li>
-                        </ul>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            Kết hợp các trang bị phù hợp có thể kích hoạt hiệu ứng bộ đồ mạnh mẽ.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section-divider"></div>
-        
-        <!-- NFTs Section -->
-        <div id="nfts">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="overview-content">
-                        <h2 style="font-family: Merienda, serif; color: #ffffff; margin-bottom: 1rem;">NFTs</h2>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff;">
-                            Xoul's Era tận dụng công nghệ blockchain để biến các vật phẩm trong game thành NFT (Non-Fungible Tokens), 
-                            cho phép người chơi thực sự sở hữu các tài sản kỹ thuật số của họ và có thể giao dịch trên thị trường.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row mt-4">
-                <div class="col-md-6 d-flex align-items-center justify-content-center">
-                    <img src="assets/img/Screenshot 2025-04-26 at 19.33.59.png" class="img-fluid feature-img" alt="NFT Assets">
-                </div>
-                <div class="col-md-6">
-                    <div class="overview-content">
-                        <h3 style="font-family: Merienda, serif; color: #ffffff;">Tài sản NFT trong game</h3>
-                        <ul style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            <li><strong>Nhân vật độc quyền:</strong> Phiên bản giới hạn với ngoại hình và kỹ năng đặc biệt</li>
-                            <li><strong>Trang bị huyền thoại:</strong> Vũ khí và áo giáp cực hiếm với thuộc tính mạnh mẽ</li>
-                            <li><strong>Đất đai:</strong> Khu vực trong game có thể xây dựng và phát triển</li>
-                            <li><strong>Vật phẩm sưu tầm:</strong> Các món đồ nghệ thuật, thú cưng và vật phẩm trang trí</li>
-                        </ul>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff;">
-                            Người chơi có thể mua bán, trao đổi hoặc cho thuê NFT của họ thông qua thị trường NFT của Xoul's Era hoặc các sàn giao dịch bên thứ ba.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section-divider"></div>
-        
-        <!-- Collectibles Section -->
-        <div id="collectibles">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="overview-content">
-                        <h2 style="font-family: Merienda, serif; color: #ffffff; margin-bottom: 1rem;">Collectibles</h2>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff;">
-                            Bên cạnh các trang bị chiến đấu, Xoul's Era còn có hệ thống vật phẩm sưu tầm phong phú cho phép 
-                            người chơi khám phá lịch sử và văn hóa của thế giới game.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="asset-gallery mt-4">
-                <div class="asset-item">
-                    <img src="assets/img/Screenshot 2025-04-26 at 19.30.49.webp" class="asset-img" alt="Ancient Artifacts">
-                    <div class="asset-info">
-                        <h4>Bí tích cổ xưa</h4>
-                        <ul style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            <li>Mảnh giấy da cổ</li>
-                            <li>Ký hiệu bí ẩn</li>
-                            <li>Trang sách phép thuật</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="asset-item">
-                    <img src="assets/img/BG/main.webp" class="asset-img" alt="Cultural Treasures">
-                    <div class="asset-info">
-                        <h4>Kho báu văn hóa</h4>
-                        <ul style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            <li>Tượng thần</li>
-                            <li>Đồ trang sức cổ</li>
-                            <li>Nhạc cụ truyền thống</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="asset-item">
-                    <img src="assets/img/Icon/coconut ..svg" class="asset-img" alt="Special Items">
-                    <div class="asset-info">
-                        <h4>Vật phẩm đặc biệt</h4>
-                        <p style="font-family: 'Work Sans', sans-serif; color: #ffffff; text-align: left;">
-                            Việc sưu tầm đủ bộ các vật phẩm sẽ mở khóa những câu chuyện phụ và phần thưởng đặc biệt, giúp người chơi hiểu sâu hơn về thế giới Xoul's Era.
-                        </p>
-                    </div>
-                </div>
+            <div class="col">
+                <a class="text-white my-2" href="privacy.html" style="font-family: 'Work Sans', sans-serif;">Privacy Policy</a>
             </div>
         </div>
     </div>
-    
-    <footer class="text-center py-4">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-lg-3">
-                <div class="col">
-                    <p class="text-white my-2" style="font-family: 'Work Sans', sans-serif;">Copyright&nbsp;©&nbsp;Xoul's Era 2025</p>
-                </div>
-                <div class="col">
-                    <ul class="list-inline my-2">
-                        <li class="list-inline-item me-4">
-                            <a class="link-light" href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item me-4">
-                            <a class="link-light" href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="link-light" href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <a class="text-white my-2" href="privacy.html" style="font-family: 'Work Sans', sans-serif;">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/template.js"></script>
+</footer>
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.classList.contains('intro-nav-item')) {
+                e.preventDefault();
+                document.querySelectorAll('.intro-nav-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    // Scrollspy for intro-nav
+    window.addEventListener('scroll', function() {
+        const sections = ['#tong-quan', '#phan-loai', '#do-hiem', '#giao-dich'];
+        let scrollPos = window.scrollY || document.documentElement.scrollTop;
+        for (let i = sections.length - 1; i >= 0; i--) {
+            let section = document.querySelector(sections[i]);
+            if (section && section.offsetTop - 120 <= scrollPos) {
+                document.querySelectorAll('.intro-nav-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                let navBtn = document.querySelector('.intro-nav-item[href="' + sections[i] + '"]');
+                if (navBtn) navBtn.classList.add('active');
+                break;
+            }
+        }
+    });
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/baguetteBox.min.js"></script>
+<script src="assets/js/template.js"></script>
 </body>
-
 </html>

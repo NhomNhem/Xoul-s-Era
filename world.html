@@ -37,9 +37,9 @@
         <div style="display: flex; min-height: 100vh;">
             <div style="min-width: 160px; max-width: 180px; display: flex; flex-direction: column; align-items: flex-start;">
                 <nav style="position: sticky; top: 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; width: 140px; margin-left: 0;">
-                    <a href="#structure" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFA040; color: #fff; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">Cấu trúc thế giới</a>
-                    <a href="#buildings" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFD040; color: #18100a; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">Công trình</a>
-                    <a href="#cities" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFD040; color: #18100a; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">Thành phố</a>
+                    <a href="#structure" class="intro-nav-item active">Cấu trúc thế giới</a>
+                    <a href="#buildings" class="intro-nav-item">Công trình</a>
+                    <a href="#cities" class="intro-nav-item">Thành phố</a>
                 </nav>
             </div>
             <div class="container" style="flex: 1;">
@@ -115,6 +115,29 @@
             </div>
         </div>
     </div>
+    <style>
+.intro-nav-item {
+    width: 100%;
+    text-align: center;
+    font-family: 'Merienda', serif;
+    font-size: 16px;
+    background: #FFD040;
+    color: #18100a;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.intro-nav-item.active,
+.intro-nav-item:focus,
+.intro-nav-item:hover {
+    background: #FFA040;
+    color: #fff;
+}
+</style>
     <script>
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -135,12 +158,15 @@
         window.addEventListener('scroll', function() {
             const sections = ['#structure', '#buildings', '#cities'];
             let scrollPos = window.scrollY || document.documentElement.scrollTop;
-            for (let i = 0; i < sections.length; i++) {
+            for (let i = sections.length - 1; i >= 0; i--) {
                 let section = document.querySelector(sections[i]);
                 if (section && section.offsetTop - 120 <= scrollPos) {
-                    document.querySelectorAll('.intro-nav-item').forEach(b => b.classList.remove('active'));
+                    document.querySelectorAll('.intro-nav-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
                     let navBtn = document.querySelector('.intro-nav-item[href="' + sections[i] + '"]');
                     if (navBtn) navBtn.classList.add('active');
+                    break;
                 }
             }
         });

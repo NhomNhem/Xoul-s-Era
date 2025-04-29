@@ -39,10 +39,10 @@
     <div style="display: flex; min-height: 100vh;">
         <div style="min-width: 160px; max-width: 180px; display: flex; flex-direction: column; align-items: flex-start;">
             <nav style="position: sticky; top: 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; width: 140px; margin-left: 0;">
-                <a href="#tong-quan" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFA040; color: #fff; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">TỔNG QUAN</a>
-                <a href="#the-gioi" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFD040; color: #18100a; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">THẾ GIỚI</a>
-                <a href="#nhan-vat" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFD040; color: #18100a; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">NHÂN VẬT</a>
-                <a href="#he-thong" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFD040; color: #18100a; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">HỆ THỐNG</a>
+                <a href="#tong-quan" class="intro-nav-item active">TỔNG QUAN</a>
+                <a href="#the-gioi" class="intro-nav-item">THẾ GIỚI</a>
+                <a href="#nhan-vat" class="intro-nav-item">NHÂN VẬT</a>
+                <a href="#he-thong" class="intro-nav-item">HỆ THỐNG</a>
             </nav>
         </div>
         <div class="container" style="flex: 1;">
@@ -68,6 +68,7 @@
                                 </p>
                             </div>
                             
+
                             <p class="content-text">
                                 Với phong cách đồ họa HD-2D độc đáo - kết hợp nhân vật pixel 2D trong môi trường 3D 
                                 sống động - Xoul's Era mang đến một trải nghiệm thị giác vừa hoài niệm vừa hiện đại.
@@ -304,49 +305,58 @@
         </div>
     </div>
 </div>
+<style>
+.intro-nav-item {
+    width: 100%;
+    text-align: center;
+    font-family: 'Merienda', serif;
+    font-size: 16px;
+    background: #FFD040;
+    color: #18100a;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    box-shadow: none;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.intro-nav-item.active,
+.intro-nav-item:focus,
+.intro-nav-item:hover {
+    background: #FFA040;
+    color: #fff;
+}
+</style>
 <script>
-    // Vertical menu active state
-    document.querySelectorAll('nav .intro-nav-item').forEach(anchor => {
+// Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            document.querySelectorAll('nav .intro-nav-item').forEach(item => {
-                item.classList.remove('active');
-                item.style.background = '#FFD040';
-                item.style.color = '#18100a';
-            });
-            this.classList.add('active');
-            this.style.background = '#FFA040';
-            this.style.color = '#fff';
+            if (this.classList.contains('intro-nav-item')) {
+                e.preventDefault();
+                document.querySelectorAll('.intro-nav-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
         });
     });
-    // Scroll active state
+    // Scrollspy for intro-nav
     window.addEventListener('scroll', function() {
         const sections = ['#tong-quan', '#the-gioi', '#nhan-vat', '#he-thong'];
         let scrollPos = window.scrollY || document.documentElement.scrollTop;
-        let found = false;
-        for (let i = 0; i < sections.length; i++) {
+        for (let i = sections.length - 1; i >= 0; i--) {
             let section = document.querySelector(sections[i]);
-            if (section && section.offsetTop - 80 <= scrollPos) {
-                document.querySelectorAll('nav .intro-nav-item').forEach(item => {
+            if (section && section.offsetTop - 120 <= scrollPos) {
+                document.querySelectorAll('.intro-nav-item').forEach(item => {
                     item.classList.remove('active');
-                    item.style.background = '#FFD040';
-                    item.style.color = '#18100a';
                 });
-                let navItem = document.querySelector('nav .intro-nav-item[href="' + sections[i] + '"]');
-                if (navItem) {
-                    navItem.classList.add('active');
-                    navItem.style.background = '#FFA040';
-                    navItem.style.color = '#fff';
-                }
-                found = true;
-            }
-        }
-        if (!found) {
-            // Default to first
-            let navItem = document.querySelector('nav .intro-nav-item[href="#tong-quan"]');
-            if (navItem) {
-                navItem.classList.add('active');
-                navItem.style.background = '#FFA040';
-                navItem.style.color = '#fff';
+                let navBtn = document.querySelector('.intro-nav-item[href="' + sections[i] + '"]');
+                if (navBtn) navBtn.classList.add('active');
+                break;
             }
         }
     });

@@ -17,6 +17,29 @@
     <link rel="stylesheet" href="assets/css/untitled.css">
     <link rel="stylesheet" href="assets/css/shared.css">
     <link rel="icon" type="image/x-icon" href="assets/img/Icon/logo.svg"/>
+    <style>
+        .intro-nav-item {
+            width: 100%;
+            text-align: center;
+            font-family: 'Merienda', serif;
+            font-size: 16px;
+            background: #FFD040;
+            color: #18100a;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            box-shadow: none;
+            transition: background 0.3s, color 0.3s;
+            padding: 10px 0;
+            margin-bottom: 10px;
+        }
+        .intro-nav-item.active,
+        .intro-nav-item:focus,
+        .intro-nav-item:hover {
+            background: #FFA040;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,10 +62,10 @@
         <div style="display: flex; min-height: 100vh;">
             <div style="min-width: 160px; max-width: 180px; display: flex; flex-direction: column; align-items: flex-start;">
                 <nav style="position: sticky; top: 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; width: 140px; margin-left: 0;">
-                    <a href="#tong-quan" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFA040; color: #fff; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">TỔNG QUAN</a>
-                    <a href="#don-vi" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFD040; color: #18100a; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">ĐƠN VỊ</a>
-                    <a href="#hanh-dong" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFD040; color: #18100a; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">HÀNH ĐỘNG</a>
-                    <a href="#thuoc-tinh" class="intro-nav-item" style="width: 100%; text-align: center; font-family: 'Merienda', serif; font-size: 16px; background: #FFD040; color: #18100a; border-radius: 30px; font-weight: bold; border: none; box-shadow: none; transition: background 0.3s, color 0.3s; padding: 10px 0;">THUỘC TÍNH</a>
+                    <a href="#tong-quan" class="intro-nav-item active">TỔNG QUAN</a>
+                    <a href="#don-vi" class="intro-nav-item">ĐƠN VỊ</a>
+                    <a href="#hanh-dong" class="intro-nav-item">HÀNH ĐỘNG</a>
+                    <a href="#thuoc-tinh" class="intro-nav-item">THUỘC TÍNH</a>
                 </nav>
             </div>
             <div class="container" style="flex: 1;">
@@ -369,35 +392,35 @@
                 if (this.classList.contains('intro-nav-item')) {
                     e.preventDefault();
                     document.querySelectorAll('.intro-nav-item').forEach(item => {
-                        item.style.background = '#FFD040';
-                        item.style.color = '#18100a';
+                        item.classList.remove('active');
                     });
-                    this.style.background = '#FFA040';
-                    this.style.color = '#fff';
+                    this.classList.add('active');
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
                 }
             });
         });
-        
         // Scrollspy for intro-nav
         window.addEventListener('scroll', function() {
             const sections = ['#tong-quan', '#don-vi', '#hanh-dong', '#thuoc-tinh'];
             let scrollPos = window.scrollY || document.documentElement.scrollTop;
+            let found = false;
             for (let i = 0; i < sections.length; i++) {
                 let section = document.querySelector(sections[i]);
                 if (section && section.offsetTop - 120 <= scrollPos) {
                     document.querySelectorAll('.intro-nav-item').forEach(item => {
-                        item.style.background = '#FFD040';
-                        item.style.color = '#18100a';
+                        item.classList.remove('active');
                     });
                     let navBtn = document.querySelector('.intro-nav-item[href="' + sections[i] + '"]');
-                    if (navBtn) {
-                        navBtn.style.background = '#FFA040';
-                        navBtn.style.color = '#fff';
-                    }
+                    if (navBtn) navBtn.classList.add('active');
+                    found = true;
                 }
+            }
+            if (!found) {
+                // Default to first
+                let navBtn = document.querySelector('.intro-nav-item[href="#tong-quan"]');
+                if (navBtn) navBtn.classList.add('active');
             }
         });
     </script>
