@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="vi" style="font-family: 'Work Sans', sans-serif;">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -30,8 +29,9 @@
             border: none;
             box-shadow: none;
             transition: background 0.3s, color 0.3s;
-            padding: 10px 0;
-            margin-bottom: 10px;
+            padding: 12px 0;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
         }
         .intro-nav-item.active,
         .intro-nav-item:focus,
@@ -39,391 +39,277 @@
             background: #FFA040;
             color: #fff;
         }
+        .content-card {
+            background: #181818;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+            padding: 32px 28px 28px 28px;
+            margin-bottom: 36px;
+        }
+        .section-title {
+            font-family: 'Merienda', serif;
+            font-size: 2.1rem;
+            color: #FFD040 !important;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+        .sub-section-title {
+            font-family: 'Merienda', serif;
+            font-size: 1.25rem;
+            color: #FFA040 !important;
+            margin-top: 18px;
+            margin-bottom: 10px;
+        }
+        .content-text, .content-text-list li {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.08rem;
+            color: #f3f3f3 !important;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        .content-text-list {
+            padding-left: 18px;
+            margin-bottom: 10px;
+        }
+        .highlighted-box {
+            background: #232323;
+            border-left: 4px solid #FFD040;
+            border-radius: 8px;
+            padding: 16px 18px;
+            margin: 18px 0 18px 0;
+        }
+        .side-by-side {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            align-items: flex-start;
+            margin-bottom: 18px;
+        }
+        .side-by-side-content {
+            flex: 1 1 320px;
+            min-width: 220px;
+        }
+        .side-by-side-image {
+            flex: 0 0 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .feature-image {
+            max-width: 220px;
+            max-height: 180px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+        }
+        .image-caption {
+            color: #bdbdbd;
+            font-size: 0.95rem;
+            margin-top: 6px;
+            text-align: center;
+        }
+        .table-responsive {
+            margin-top: 18px;
+        }
+        table.table {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1rem;
+            color: #f3f3f3;
+            background: #232323;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        table.table th, table.table td {
+            padding: 10px 12px;
+            border-color: #333;
+        }
+        table.table th {
+            background: #292929;
+            color: #FFD040;
+            font-size: 1.05rem;
+        }
+        @media (max-width: 900px) {
+            .side-by-side { flex-direction: column; gap: 10px; }
+            .side-by-side-image, .side-by-side-content { max-width: 100%; }
+            .feature-image { max-width: 100%; height: auto; }
+        }
+        @media (max-width: 600px) {
+            .content-card { padding: 16px 6px; }
+            .section-title { font-size: 1.3rem; }
+            .sub-section-title { font-size: 1.05rem; }
+            .intro-nav-item { font-size: 14px; padding: 8px 0; }
+        }
     </style>
 </head>
-
 <body>
+<div class="container">
+    <div class="main-header">
+        <div class="navigation-tabs">
+            <a href="index.html" class="nav-tab">Overview</a>
+            <a href="world.html" class="nav-tab">World</a>
+            <a href="combat.html" class="nav-tab active">Combat</a>
+            <a href="asset.html" class="nav-tab">Assets</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1 class="page-title">Hệ Thống Chiến Đấu</h1>
+    <div style="display: flex; min-height: 100vh;">
+        <div style="min-width: 160px; max-width: 180px; display: flex; flex-direction: column; align-items: flex-start;">
+            <nav style="position: sticky; top: 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; width: 140px; margin-left: 0;">
+                <a href="#tong-quan" class="intro-nav-item active">TỔNG QUAN</a>
+                <a href="#don-vi" class="intro-nav-item">ĐƠN VỊ</a>
+                <a href="#hanh-dong" class="intro-nav-item">HÀNH ĐỘNG</a>
+                <a href="#thuoc-tinh" class="intro-nav-item">THUỘC TÍNH</a>
+            </nav>
+        </div>
+        <div class="container" style="flex: 1;">
+            <section id="tong-quan">
+                <div class="content-card">
+                    <h2 class="section-title">Tổng Quan Chiến Đấu</h2>
+                    <p class="content-text">Xoul's Era là một tựa game MMORPG hành động thời gian thực, nơi các trận chiến diễn ra liên tục, không theo lượt. Người chơi sẽ điều khiển nhân vật di chuyển, tấn công, né tránh và sử dụng kỹ năng một cách linh hoạt trên bản đồ rộng lớn, kết hợp cùng đồng đội để vượt qua các thử thách và boss mạnh mẽ. Chiến thắng phụ thuộc vào kỹ năng cá nhân, sự phối hợp nhóm và chiến thuật sử dụng kỹ năng đúng thời điểm.</p>
+                </div>
+            </section>
+            <section id="don-vi">
+                <div class="content-card">
+                    <h2 class="section-title">Đơn Vị</h2>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <h3 class="sub-section-title">Chiến đấu thời gian thực</h3>
+                            <p class="content-text">Trong Xoul's Era, mỗi nhân vật đều có thể tự do di chuyển trên bản đồ, tung đòn tấn công cơ bản, sử dụng kỹ năng chủ động hoặc hỗ trợ, và né tránh các đòn đánh của kẻ thù. Không có lượt, mọi hành động đều diễn ra đồng thời giữa người chơi và quái vật. Việc lựa chọn vị trí, thời điểm tung kỹ năng, phối hợp cùng đồng đội sẽ quyết định thành bại của trận chiến.</p>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img class="feature-image" src="assets/img/JoannaDArcIIIAttackFrontHeavyAttack.gif">
+                        </div>
+                    </div>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <h3 class="sub-section-title">Bản đồ và môi trường</h3>
+                            <p class="content-text">Các trận chiến diễn ra trên bản đồ mở với nhiều địa hình, chướng ngại vật và yếu tố môi trường tác động trực tiếp đến chiến thuật. Người chơi có thể tận dụng địa hình để né tránh, ẩn nấp hoặc tạo lợi thế khi giao tranh. Mỗi khu vực đều có những bí ẩn, phần thưởng và thử thách riêng biệt.</p>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img class="feature-image" src="assets/img/JoannaDArcIIICastsHolySlash.gif">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="hanh-dong">
+                <div class="content-card">
+                    <h2 class="section-title">Kỹ Năng & Hành Động</h2>
+                    <p class="content-text">Mỗi nhân vật sở hữu bộ kỹ năng riêng biệt, từ tấn công diện rộng, khống chế, hồi phục cho đến các kỹ năng hỗ trợ đồng đội. Người chơi cần kết hợp linh hoạt giữa tấn công, phòng thủ, di chuyển và sử dụng kỹ năng để tối ưu hóa hiệu quả chiến đấu. Hệ thống Rage cho phép tích lũy năng lượng khi gây hoặc nhận sát thương, khi đầy có thể giải phóng kỹ năng tối thượng thay đổi cục diện trận đấu.</p>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <h3 class="sub-section-title">Ví dụ kỹ năng</h3>
+                            <p class="content-text">Một số kỹ năng tiêu biểu như: bắn cung tầm xa gây sát thương lớn, triệu hồi bão gió tấn công nhiều mục tiêu, hoặc giải phóng sức mạnh ánh sáng hồi phục đồng minh và gây sát thương diện rộng lên kẻ địch.</p>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img class="feature-image" src="assets/img/CentaurLadyLabeledChargeShoot.gif">
+                        </div>
+                    </div>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <h3 class="sub-section-title">Hệ thống Rage</h3>
+                            <p class="content-text">Khi nhân vật tích đủ Rage thông qua giao tranh, người chơi có thể kích hoạt kỹ năng đặc biệt mạnh mẽ, tạo ra bước ngoặt trong trận đấu. Việc quản lý Rage và lựa chọn thời điểm sử dụng là yếu tố then chốt để lật ngược tình thế.</p>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img class="feature-image" src="assets/img/JoannaDArcIIICastsHolySlash.gif">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="thuoc-tinh">
+                <div class="content-card">
+                    <h2 class="section-title">Hệ Thống Nguyên Tố & Thuộc Tính</h2>
+                    <p class="content-text">Xoul's Era sở hữu hệ thống nguyên tố đa dạng như Lửa, Nước, Gió, Đất, Ánh Sáng, Bóng Tối và Vô Tính. Mỗi nguyên tố có điểm mạnh, điểm yếu riêng, ảnh hưởng trực tiếp đến sát thương và phòng thủ trong giao tranh. Việc hiểu rõ tương tác giữa các nguyên tố, kết hợp với các chỉ số như tấn công, phòng thủ, tốc độ, chí mạng... sẽ giúp người chơi xây dựng chiến thuật hợp lý và phát huy tối đa sức mạnh nhân vật.</p>
+                    <div class="side-by-side">
+                        <div class="side-by-side-content">
+                            <h3 class="sub-section-title">Chiến thuật nguyên tố</h3>
+                            <p class="content-text">Tận dụng đúng điểm yếu của đối thủ sẽ giúp tăng sát thương, trong khi phòng thủ hợp lý trước nguyên tố mạnh sẽ giảm thiểu rủi ro. Sự đa dạng về nguyên tố và thuộc tính tạo nên chiều sâu chiến thuật cho mỗi trận chiến.</p>
+                        </div>
+                        <div class="side-by-side-image">
+                            <img class="feature-image" src="assets/img/CentaurLadyLabeledSpringRain.gif">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<footer class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.9);">
     <div class="container">
-        <div class="main-header">
-            <div class="navigation-tabs">
-                <a href="index.html" class="nav-tab">Overview</a>
-                <a href="world.html" class="nav-tab">World</a>
-                <a href="combat.html" class="nav-tab active">Combat</a>
-                <a href="asset.html" class="nav-tab">Assets</a>
+        <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col">
+                <p class="text-white my-2" style="font-family: 'Work Sans', sans-serif;">Copyright&nbsp;©&nbsp;Xoul's Era 2025</p>
+            </div>
+            <div class="col">
+                <ul class="list-inline my-2">
+                    <li class="list-inline-item me-4">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item me-4">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="link-light" href="#">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <a class="text-white my-2" href="privacy.html" style="font-family: 'Work Sans', sans-serif;">Privacy Policy</a>
             </div>
         </div>
     </div>
-    <div class="container">
-        <h1 class="page-title">Hệ Thống Chiến Đấu</h1>
-        <div style="display: flex; min-height: 100vh;">
-            <div style="min-width: 160px; max-width: 180px; display: flex; flex-direction: column; align-items: flex-start;">
-                <nav style="position: sticky; top: 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; width: 140px; margin-left: 0;">
-                    <a href="#tong-quan" class="intro-nav-item active">TỔNG QUAN</a>
-                    <a href="#don-vi" class="intro-nav-item">ĐƠN VỊ</a>
-                    <a href="#hanh-dong" class="intro-nav-item">HÀNH ĐỘNG</a>
-                    <a href="#thuoc-tinh" class="intro-nav-item">THUỘC TÍNH</a>
-                </nav>
-            </div>
-            <div class="container" style="flex: 1;">
-                <section id="tong-quan">
-                    <div class="content-card">
-                        <h2 class="section-title">Tổng Quan Chiến Đấu</h2>
-                        <div class="side-by-side">
-                            <div class="side-by-side-content">
-                                <p class="content-text">
-                                    <strong>Xoul's Era</strong> sử dụng hệ thống chiến đấu tự động. Người chơi cần cấu hình đội hình chiến đấu của mình trước và sử dụng nó để chiến đấu trong các trận đấu khác nhau.
-                                </p>
-                                <div class="highlighted-box">
-                                    <p class="content-text">
-                                        "Nghệ thuật chiến đấu không chỉ là sức mạnh, mà còn là chiến lược sắp xếp đội hình và trang bị phù hợp."
-                                    </p>
-                                </div>
-                                <p class="content-text">
-                                    Hệ thống chiến đấu hoàn toàn tự động. Khi trận chiến bắt đầu, các nhân vật sẽ chiến đấu theo thuộc tính và kỹ năng của họ mà không cần người chơi can thiệp thêm. Chìa khóa để giành chiến thắng là lập kế hoạch chiến lược cho đội hình của bạn trước đó.
-                                </p>
-                                <h3 class="sub-section-title">Đội Hình</h3>
-                                <p class="content-text">
-                                    Đội hình của bạn bao gồm 6 anh hùng. Chỉ một anh hùng với mỗi codename có thể được đưa vào đội hình của bạn. Mỗi anh hùng có thể được trang bị một vũ khí và mang theo một thú cưng để nâng cao khả năng chiến đấu.
-                                </p>
-                            </div>
-                            <div class="side-by-side-image">
-                                <img src="assets/img/JoannaDArcIIIAttackFrontHeavyAttack.gif" alt="Combat Example" class="feature-image">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <section id="hanh-dong">
-                    <div class="content-card">
-                        <h2 class="section-title">Hệ Thống Hành Động</h2>
-                        <div class="side-by-side">
-                            <div class="side-by-side-content">
-                                <h3 class="sub-section-title">Thanh Hành Động</h3>
-                                <p class="content-text">
-                                    Bên cạnh mỗi anh hùng là một thanh hành động dọc. Khi thanh đầy, anh hùng sẽ tấn công hoặc sử dụng kỹ năng anh hùng nếu có. Tốc độ nạp lại liên quan đến thuộc tính tốc độ của anh hùng.
-                                </p>
-                                <ul class="content-text-list">
-                                    <li>Giá trị thanh hành động tối đa: 100%</li>
-                                    <li>Tỷ lệ tăng thanh hành động = Giá trị tốc độ thực tế / 300 * 100% mỗi giây</li>
-                                    <li>Thanh hành động không tăng trong quá trình tấn công, phản công, combo hoặc choáng</li>
-                                </ul>
-                                <h3 class="sub-section-title">Thanh Thịnh Nộ</h3>
-                                <p class="content-text">
-                                    Bên dưới mỗi anh hùng là một thanh thịnh nộ ngang, tăng lên khi anh hùng hành động hoặc bị tấn công. Khi đầy, tỷ lệ nạp lại thanh hành động của anh hùng sẽ tăng gấp đôi trong 15 giây.
-                                </p>
-                                <ul class="content-text-list">
-                                    <li>Hiệu ứng: Tăng gấp đôi tỷ lệ tăng thanh hành động</li>
-                                    <li>Thời gian thịnh nộ: 15 giây</li>
-                                    <li>Điểm thịnh nộ tối đa: 100 điểm</li>
-                                    <li>+2 điểm mỗi giây</li>
-                                    <li>+5 điểm khi bị đánh trúng</li>
-                                    <li>+10 điểm khi tấn công</li>
-                                </ul>
-                            </div>
-                            <div class="side-by-side-image">
-                                <div class="image-with-caption">
-                                    <img src="assets/img/JoannaDArcIIICastsLightCut.gif" alt="Action Bar System" class="feature-image">
-                                    <p class="image-caption">Anh hùng thực hiện hành động khi thanh hành động đầy</p>
-                                </div>
-                                <div class="action-bar-visualization" style="margin-top: 20px; display: flex; align-items: center; justify-content: center;">
-                                    <div style="height: 150px; width: 25px; background-color: #333; position: relative; margin-right: 40px;">
-                                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 70%; background-color: #4da6ff;"></div>
-                                        <div style="position: absolute; top: -30px; width: 100%; text-align: center; color: white;">Hành động</div>
-                                    </div>
-                                    <div style="height: 25px; width: 150px; background-color: #333; position: relative;">
-                                        <div style="position: absolute; left: 0; top: 0; height: 100%; width: 70%; background-color: #ff4d4d;"></div>
-                                        <div style="position: absolute; top: -30px; width: 100%; text-align: center; color: white;">Thịnh nộ</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="don-vi">
-                    <div class="content-card">
-                        <h2 class="section-title">Đơn Vị Chiến Đấu</h2>
-                        <p class="content-text">
-                            Một đơn vị chiến đấu bao gồm một anh hùng, một vũ khí và một thú cưng. Thuộc tính của họ được tích lũy và tính toán trong các trận chiến.
-                        </p>
-                        <div class="side-by-side">
-                            <div class="side-by-side-content">
-                                <h3 class="sub-section-title">Anh Hùng</h3>
-                                <p class="content-text">
-                                    Có tổng cộng 48 codename anh hùng trong trò chơi, mỗi người có giới tính cố định và có sẵn trong 5 độ hiếm: phổ thông, không phổ biến, hiếm, sử thi và huyền thoại.
-                                </p>
-                                <p class="content-text">
-                                    Mỗi anh hùng có các thuộc tính độc đáo và có thể có tối đa bảy kỹ năng khác nhau có thể nâng cấp.
-                                </p>
-                            </div>
-                            <div class="side-by-side-image">
-                                <img src="assets/img/leto2.png" alt="Hero Example" class="feature-image">
-                            </div>
-                        </div>
-                        
-                        <div class="side-by-side">
-                            <div class="side-by-side-image">
-                                <img src="assets/img/CentaurLadyLabeledChargeShoot.gif" alt="Weapon Example" class="feature-image">
-                            </div>
-                            <div class="side-by-side-content">
-                                <h3 class="sub-section-title">Vũ Khí</h3>
-                                <p class="content-text">
-                                    Có tám loại vũ khí, mỗi loại có phương thức tấn công tiêu chuẩn khác nhau:
-                                </p>
-                                <ul class="content-text-list">
-                                    <li>Dao găm: Thuộc tính cố định - HP, Né tránh</li>
-                                    <li>Kiếm: Thuộc tính cố định - HP, Phản công</li>
-                                    <li>Rìu: Thuộc tính cố định - Tấn công, Chí mạng</li>
-                                    <li>Búa: Thuộc tính cố định - Tấn công, HP</li>
-                                    <li>Cung: Thuộc tính cố định - Tấn công, Combo</li>
-                                    <li>Súng: Thuộc tính cố định - Tấn công, Tốc độ</li>
-                                    <li>Gậy: Thuộc tính cố định - Tấn công, MP</li>
-                                    <li>Sách: Thuộc tính cố định - Tấn công, Phòng thủ</li>
-                                </ul>
-                                <p class="content-text">
-                                    Anh hùng không có vũ khí sẽ gây sát thương ít hơn 60%.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="side-by-side">
-                            <div class="side-by-side-content">
-                                <h3 class="sub-section-title">Thú Cưng</h3>
-                                <p class="content-text">
-                                    Có bốn loại thú cưng trong trò chơi, mỗi loại cung cấp các chức năng đặc biệt:
-                                </p>
-                                <ul class="content-text-list">
-                                    <li>Rồng: Thanh hành động đầy nhanh hơn</li>
-                                    <li>Treant: Tăng giá trị thanh hành động ban đầu</li>
-                                    <li>Ốc biển: Tăng giá trị thanh thịnh nộ ban đầu</li>
-                                    <li>Gấu trúc: Thanh thịnh nộ đầy nhanh hơn</li>
-                                </ul>
-                                <p class="content-text">
-                                    Anh hùng không có thú cưng sẽ nhận nhiều hơn 100% sát thương.
-                                </p>
-                            </div>
-                            <div class="side-by-side-image">
-                                <img src="assets/img/CentaurLadyLabeledWindStorm.gif" alt="Pet Example" class="feature-image">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <section id="thuoc-tinh">
-                    <div class="content-card">
-                        <h2 class="section-title">Thuộc Tính Chiến Đấu</h2>
-                        <p class="content-text">
-                            Hiểu về cơ chế chiến đấu là rất quan trọng để xây dựng đội hình hiệu quả.
-                        </p>
-                        <div class="side-by-side">
-                            <div class="side-by-side-content">
-                                <h3 class="sub-section-title">Tấn Công Tiêu Chuẩn</h3>
-                                <p class="content-text">
-                                    Tấn công tiêu chuẩn của anh hùng được xác định bởi loại vũ khí của họ. Các vũ khí khác nhau có các mẫu nhắm mục tiêu khác nhau:
-                                </p>
-                                <ul class="content-text-list">
-                                    <li>Vũ khí cận chiến (Dao găm, Kiếm, Rìu, Búa): Tấn công mục tiêu trước mặt</li>
-                                    <li>Vũ khí tầm xa (Cung, Súng): Tấn công từ xa với phạm vi lớn hơn</li>
-                                    <li>Vũ khí phép thuật (Gậy, Sách): Tấn công phạm vi rộng hoặc hiệu ứng đặc biệt</li>
-                                </ul>
-                            </div>
-                            <div class="side-by-side-image">
-                                <img src="assets/img/CentaurLadyLabeledSpringRain.gif" alt="Attack Patterns" class="feature-image">
-                            </div>
-                        </div>
-                        
-                        <div class="side-by-side">
-                            <div class="side-by-side-image">
-                                <img src="assets/img/JoannaDArcIIICastsHolySlash.gif" alt="Hero Skills" class="feature-image">
-                            </div>
-                            <div class="side-by-side-content">
-                                <h3 class="sub-section-title">Kỹ Năng Anh Hùng</h3>
-                                <p class="content-text">
-                                    Mỗi anh hùng có thể có tối đa bảy kỹ năng độc đáo. Một số yêu cầu MP để sử dụng, trong khi những kỹ năng khác tăng cường thuộc tính.
-                                </p>
-                                <p class="content-text">
-                                    Kỹ năng có thể gây ra nhiều hiệu ứng:
-                                </p>
-                                <ul class="content-text-list">
-                                    <li>Sát thương trực tiếp cho kẻ thù</li>
-                                    <li>Chữa lành đồng minh</li>
-                                    <li>Tăng cường thuộc tính</li>
-                                    <li>Làm suy yếu đối thủ</li>
-                                    <li>Hiệu ứng đặc biệt như choáng, chảy máu hoặc combo</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="highlighted-box">
-                            <h3 class="sub-section-title">Thuộc Tính Cơ Bản</h3>
-                            <p class="content-text">
-                                Năm thuộc tính chính trong trò chơi này là Tấn công, Phòng thủ, Điểm Sinh lực (HP), Điểm Phép thuật (MP) và Tốc độ.
-                            </p>
-                            <div class="table-responsive mt-4">
-                                <table class="table table-dark table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th>Thuộc tính</th>
-                                            <th>Mô tả</th>
-                                            <th>Giới hạn</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>HP</td>
-                                            <td>Điểm sinh lực tối đa, tăng khi anh hùng tăng cấp</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>MP</td>
-                                            <td>Điểm phép thuật tối đa, được xác định khi anh hùng được tạo ra</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tấn công</td>
-                                            <td>Sức mạnh tấn công, tăng khi anh hùng tăng cấp</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Phòng thủ</td>
-                                            <td>Sức mạnh phòng thủ, tăng khi anh hùng tăng cấp</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tốc độ</td>
-                                            <td>Tỷ lệ tăng thanh hành động, được xác định khi anh hùng được tạo ra</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Chí mạng</td>
-                                            <td>Xác suất gây sát thương chí mạng cho kẻ thù</td>
-                                            <td>60%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Sát thương Chí mạng</td>
-                                            <td>Sát thương chí mạng ban đầu là 150%. Thuộc tính này tăng giá trị cơ bản này</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Né tránh</td>
-                                            <td>Xác suất tránh sát thương từ kẻ thù</td>
-                                            <td>60%</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Combo</td>
-                                            <td>Cơ hội phát động một đòn tấn công thông thường bổ sung sau khi tấn công</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Phản công</td>
-                                            <td>Cơ hội phản công khi bị kẻ thù tấn công trúng</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        
-                        <div class="highlighted-box">
-                            <h3 class="sub-section-title">Phóng Xạ Hạt Nhân</h3>
-                            <p class="content-text">
-                                Các anh hùng bạn trang bị trong đội hình của mình được coi là đang ở trên chiến trường, một thế giới nguy hiểm đầy phóng xạ hạt nhân. Khi được đặt ở đó, họ trở nên phóng xạ và thời gian của họ bị giới hạn.
-                            </p>
-                            <p class="content-text">
-                                Anh hùng có độ hiếm cao hơn có thể chịu đựng phóng xạ trong thời gian dài hơn. Độ hiếm của anh hùng càng cao, họ càng có thể chịu đựng nhiều phóng xạ hạt nhân hơn.
-                            </p>
-                            <p class="content-text">
-                                <strong>Anh Hùng Genesis:</strong> Các Anh Hùng Genesis không bao giờ chết và miễn nhiễm với tác động của phóng xạ hạt nhân.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-    <footer class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.9);">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-lg-3">
-                <div class="col">
-                    <p class="text-white my-2" style="font-family: 'Work Sans', sans-serif;">Copyright&nbsp;©&nbsp;Xoul's Era 2025</p>
-                </div>
-                <div class="col">
-                    <ul class="list-inline my-2">
-                        <li class="list-inline-item me-4">
-                            <a class="link-light" href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item me-4">
-                            <a class="link-light" href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="link-light" href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <a class="text-white my-2" href="privacy.html" style="font-family: 'Work Sans', sans-serif;">Privacy Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                if (this.classList.contains('intro-nav-item')) {
-                    e.preventDefault();
-                    document.querySelectorAll('.intro-nav-item').forEach(item => {
-                        item.classList.remove('active');
-                    });
-                    this.classList.add('active');
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        // Scrollspy for intro-nav
-        window.addEventListener('scroll', function() {
-            const sections = ['#tong-quan', '#don-vi', '#hanh-dong', '#thuoc-tinh'];
-            let scrollPos = window.scrollY || document.documentElement.scrollTop;
-            let found = false;
-            for (let i = 0; i < sections.length; i++) {
-                let section = document.querySelector(sections[i]);
-                if (section && section.offsetTop - 120 <= scrollPos) {
-                    document.querySelectorAll('.intro-nav-item').forEach(item => {
-                        item.classList.remove('active');
-                    });
-                    let navBtn = document.querySelector('.intro-nav-item[href="' + sections[i] + '"]');
-                    if (navBtn) navBtn.classList.add('active');
-                    found = true;
-                }
+</footer>
+<script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            if (this.classList.contains('intro-nav-item')) {
+                e.preventDefault();
+                document.querySelectorAll('.intro-nav-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
             }
-            if (!found) {
-                // Default to first
-                let navBtn = document.querySelector('.intro-nav-item[href="#tong-quan"]');
+        });
+    });
+    // Scrollspy for intro-nav
+    window.addEventListener('scroll', function() {
+        const sections = ['#tong-quan', '#don-vi', '#hanh-dong', '#thuoc-tinh'];
+        let scrollPos = window.scrollY || document.documentElement.scrollTop;
+        for (let i = sections.length - 1; i >= 0; i--) {
+            let section = document.querySelector(sections[i]);
+            if (section && section.offsetTop - 120 <= scrollPos) {
+                document.querySelectorAll('.intro-nav-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                let navBtn = document.querySelector('.intro-nav-item[href="' + sections[i] + '"]');
                 if (navBtn) navBtn.classList.add('active');
+                break;
             }
-        });
-    </script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/baguetteBox.min.js"></script>
-    <script src="assets/js/template.js"></script>
+        }
+    });
+</script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-init.js"></script>
+<script src="assets/js/baguetteBox.min.js"></script>
+<script src="assets/js/template.js"></script>
 </body>
-
 </html>
