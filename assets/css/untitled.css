@@ -205,6 +205,11 @@ footer {
   margin-bottom: 0.5rem;
 }
 
+/* Căn lề đều cho toàn bộ nội dung văn bản */
+body, p, li, .content-text, .feature-desc, .character-desc, .kingdom-desc {
+    text-align: justify;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .overview-title {

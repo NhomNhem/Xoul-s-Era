@@ -208,3 +208,7 @@ body::before {
         transform: scale(1);
     }
 }
+::selection {
+    background: #a85cff;
+    color: #fff;
+}
