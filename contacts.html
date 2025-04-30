@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en" style="font-family: 'Work Sans', sans-serif;">
+<html data-bs-theme="light" lang="vi" style="font-family: 'Work Sans', sans-serif;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>About - Xoul's Era</title>
+    <title>Contact - Xoul's Era</title>
     <meta property="og:image" content="assets/img/Icon/logo.svg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -14,269 +14,654 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans&amp;display=swap">
     <link rel="stylesheet" href="assets/css/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/untitled.css">
+    <link rel="stylesheet" href="assets/css/shared.css">
     <link rel="icon" type="image/x-icon" href="assets/img/Icon/logo.svg"/>
+    <style>
+        .contact-container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .page-title {
+            font-family: 'Merienda', serif;
+            font-size: 2.5rem;
+            color: #FFD040;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .content-card {
+            background: #181818;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+            padding: 32px 28px 28px 28px;
+            margin-bottom: 36px;
+        }
+        
+        .section-title {
+            font-family: 'Merienda', serif;
+            font-size: 1.8rem;
+            color: #FFD040 !important;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+        
+        .contact-nav-item {
+            width: 100%;
+            text-align: center;
+            font-family: 'Merienda', serif;
+            font-size: 16px;
+            background: #FFD040;
+            color: #18100a;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            box-shadow: none;
+            transition: background 0.3s, color 0.3s;
+            padding: 12px 0;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+            display: block;
+            text-decoration: none;
+        }
+        
+        .contact-nav-item.active,
+        .contact-nav-item:focus,
+        .contact-nav-item:hover {
+            background: #FFA040;
+            color: #fff;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #f3f3f3;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-bottom: 15px;
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: #bbbbbb;
+            opacity: 1;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: #FFD040;
+            color: #ffffff;
+            box-shadow: 0 0 0 0.25rem rgba(255, 208, 64, 0.25);
+        }
+        
+        .contact-form label {
+            color: #f3f3f3;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .content-text {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 1.08rem;
+            color: #f3f3f3 !important;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        
+        .btn-primary {
+            background-color: #FFD040;
+            border-color: #FFD040;
+            color: #18100a;
+            font-family: 'Merienda', serif;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: #FFA040;
+            border-color: #FFA040;
+            color: #ffffff;
+        }
+        
+        .social-icon {
+            color: #FFD040;
+            font-size: 2rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .social-icon:hover {
+            color: #FFA040;
+        }
+        
+        .team-member {
+            background-color: rgba(24, 24, 24, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .team-avatar {
+            max-height: 120px;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .team-name {
+            font-family: 'Merienda', serif;
+            color: #FFD040;
+            margin-bottom: 5px;
+        }
+        
+        .team-role {
+            font-style: italic;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info-icon {
+            color: #FFD040;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-info-text {
+            color: #f3f3f3;
+            font-size: 1rem;
+        }
+        
+        .road-item {
+            background-color: rgba(173, 15, 15, 0.5);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+        
+        .road-item:hover {
+            transform: translateX(5px);
+        }
+        
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .content-card {
+                padding: 20px 15px;
+            }
+        }
+
+        .contact-form select option {
+            color: #18100a;
+            background: #fff;
+        }
+    </style>
 </head>
 
-<body class="overview-page">
-    <nav class="navbar navbar-expand-md sticky-top py-md-3" style="background-color: rgba(0, 0, 0, 0.7); height: 59px;">
-        <div class="container">
-            <a class="navbar-brand" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">
-                <img src="assets/img/Icon/logo.svg" width="59" height="50" style="font-family: 'Work Sans', sans-serif;">NhomToongTenz
-            </a>
-            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="font-family: 'Work Sans', sans-serif;">
-                <span class="visually-hidden" style="font-family: 'Work Sans', sans-serif;">Toggle navigation</span>
-                <span class="navbar-toggler-icon" style="font-family: 'Work Sans', sans-serif;"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navcol-1" style="font-family: 'Work Sans', sans-serif;">
-                <ul class="navbar-nav mx-auto" style="font-family: 'Work Sans', sans-serif;">
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="index.html" style="font-family: Merienda, serif; color: #ffffff;">Overview</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="world.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">World</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="combat.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Combat</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="asset.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Asset</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link" href="book.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">Story</a></li>
-                    <li class="nav-item" style="font-family: 'Work Sans', sans-serif;"><a class="nav-link active" href="contacts.html" style="font-family: 'Work Sans', sans-serif; color: #ffffff;">About</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <div class="container overview-container">
-        <h1 class="overview-title">About Us</h1>
-        
-        <div class="overview-buttons">
-            <a href="#team" class="overview-button">Team</a>
-            <a href="#mission" class="overview-button">Mission</a>
-            <a href="#roadmap" class="overview-button">Roadmap</a>
-            <a href="#contact" class="overview-button">Contact</a>
-        </div>
-        
-        <!-- Team Section -->
-        <div class="overview-content" id="team">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-4">
-                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Our Team</h2>
-                        <hr>
-                    </div>
-                    
-                    <p style="color: #ffffff; text-align: center; margin-bottom: 30px;">
-                        NhomToongTenz là một đội ngũ phát triển game trẻ đầy tâm huyết, được thành lập vào năm 2023 với mục tiêu 
-                        tạo ra những trải nghiệm game độc đáo kết hợp giữa kỹ thuật hiện đại và văn hóa truyền thống Việt Nam.
-                    </p>
-                </div>
-                
-                <div class="col-12 col-xl-10 mx-auto">
-                    <div class="row mb-4">
-                        <!-- Team Member 1 -->
-                        <div class="col-md-4 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%; text-align: center;">
-                                <img src="assets/img/Icon/logo.svg" class="img-fluid mb-3" style="max-height: 120px; border-radius: 50%; background-color: #fff; padding: 10px;">
-                                <h4 style="font-family: Merienda, serif; color: #ffffff;">Nguyễn Văn A</h4>
-                                <p style="font-style: italic; color: #aaa;">Game Director & Lead Developer</p>
-                                <p style="color: #ffffff;">
-                                    Chuyên gia về Unity và phát triển gameplay với hơn 5 năm kinh nghiệm.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Team Member 2 -->
-                        <div class="col-md-4 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%; text-align: center;">
-                                <img src="assets/img/Icon/logo.svg" class="img-fluid mb-3" style="max-height: 120px; border-radius: 50%; background-color: #fff; padding: 10px;">
-                                <h4 style="font-family: Merienda, serif; color: #ffffff;">Trần Thị B</h4>
-                                <p style="font-style: italic; color: #aaa;">Art Director & Character Designer</p>
-                                <p style="color: #ffffff;">
-                                    Chuyên gia thiết kế pixel art với niềm đam mê về thần thoại và văn hóa Việt Nam.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <!-- Team Member 3 -->
-                        <div class="col-md-4 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 15px; height: 100%; text-align: center;">
-                                <img src="assets/img/Icon/logo.svg" class="img-fluid mb-3" style="max-height: 120px; border-radius: 50%; background-color: #fff; padding: 10px;">
-                                <h4 style="font-family: Merienda, serif; color: #ffffff;">Lê Văn C</h4>
-                                <p style="font-style: italic; color: #aaa;">Game & Level Designer</p>
-                                <p style="color: #ffffff;">
-                                    Chuyên gia về thiết kế màn chơi và hệ thống gameplay cân bằng.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Mission Section -->
-        <div class="overview-content" id="mission">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-4">
-                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Our Mission</h2>
-                        <hr>
-                    </div>
-                </div>
-                
-                <div class="col-md-8 mx-auto">
-                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; margin-bottom: 30px;">
-                        <h4 style="font-family: Merienda, serif; color: #ffffff; text-align: center;">Tầm Nhìn</h4>
-                        <p style="color: #ffffff; text-align: justify;">
-                            Trở thành studio game hàng đầu Việt Nam trong việc kết hợp văn hóa truyền thống với công nghệ hiện đại, 
-                            tạo ra những trải nghiệm game độc đáo và mang tính giáo dục.
-                        </p>
-                        
-                        <h4 style="font-family: Merienda, serif; color: #ffffff; text-align: center; margin-top: 20px;">Sứ Mệnh</h4>
-                        <p style="color: #ffffff; text-align: justify;">
-                            Chúng tôi cam kết:
-                        </p>
-                        <ul style="color: #ffffff;">
-                            <li>Tạo ra những trải nghiệm game chất lượng cao, giàu tính nghệ thuật và đậm đà bản sắc văn hóa Việt Nam</li>
-                            <li>Phát triển các sản phẩm game kết hợp giữa yếu tố giải trí và giáo dục về lịch sử, văn hóa</li>
-                            <li>Thúc đẩy sự phát triển của ngành công nghiệp game trong nước</li>
-                            <li>Xây dựng cộng đồng game thủ lành mạnh và bền vững</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Roadmap Section -->
-        <div class="overview-content" id="roadmap">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-4">
-                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Game Roadmap</h2>
-                        <hr>
-                    </div>
-                    
-                    <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; color: #ffffff; margin-bottom: 30px;">
-                        <div class="row mb-3">
-                            <div class="col-md-3 text-center">
-                                <div style="background-color: rgba(173, 15, 15, 0.5); border-radius: 10px; padding: 10px;">
-                                    <h5>Q3 2025</h5>
-                                    <p style="font-size: 0.9rem;">Alpha Release</p>
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <ul>
-                                    <li>Phát hành bản alpha với các tính năng cơ bản</li>
-                                    <li>Hoàn thiện hệ thống chiến đấu và điều khiển nhân vật</li>
-                                    <li>Giới thiệu vương quốc đầu tiên: Leto</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="row mb-3">
-                            <div class="col-md-3 text-center">
-                                <div style="background-color: rgba(173, 15, 15, 0.5); border-radius: 10px; padding: 10px;">
-                                    <h5>Q1 2026</h5>
-                                    <p style="font-size: 0.9rem;">Beta Release</p>
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <ul>
-                                    <li>Mở rộng thêm hai vương quốc: Uranastra và Origin</li>
-                                    <li>Thêm các nhân vật và kỹ năng mới</li>
-                                    <li>Cải thiện đồ họa và hiệu ứng âm thanh</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="col-md-3 text-center">
-                                <div style="background-color: rgba(173, 15, 15, 0.5); border-radius: 10px; padding: 10px;">
-                                    <h5>Q4 2026</h5>
-                                    <p style="font-size: 0.9rem;">Full Release</p>
-                                </div>
-                            </div>
-                            <div class="col-md-9">
-                                <ul>
-                                    <li>Phát hành phiên bản đầy đủ với tất cả nội dung</li>
-                                    <li>Giới thiệu vương quốc cuối cùng: Xylos</li>
-                                    <li>Hoàn thiện cốt truyện và các nhiệm vụ phụ</li>
-                                    <li>Hỗ trợ nhiều nền tảng: PC, Mobile, Console</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Contact Section -->
-        <div class="overview-content" id="contact">
-            <div class="row">
-                <div class="col-md-10 col-lg-8 mx-auto">
-                    <div class="mb-4">
-                        <h2 style="font-family: 'Water Brush', serif; color: #ffffff;">Contact Us</h2>
-                        <hr>
-                    </div>
-                    
-                    <div class="row mb-4">
-                        <div class="col-md-6 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; height: 100%;">
-                                <h4 style="font-family: Merienda, serif; color: #ffffff; text-align: center;">Liên Hệ</h4>
-                                <ul class="list-unstyled text-center" style="color: #ffffff;">
-                                    <li class="mb-2"><i class="icon icon-tabler icon-tabler-mail me-2"></i> Email: nhomtoongtenz@email.com</li>
-                                    <li class="mb-2"><i class="icon icon-tabler icon-tabler-phone me-2"></i> Điện thoại: +84 123 456 789</li>
-                                    <li class="mb-2"><i class="icon icon-tabler icon-tabler-map-pin me-2"></i> Địa chỉ: Hà Nội, Việt Nam</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-4">
-                            <div style="background-color: rgba(0, 0, 0, 0.7); border-radius: 10px; padding: 20px; height: 100%;">
-                                <h4 style="font-family: Merienda, serif; color: #ffffff; text-align: center;">Theo dõi chúng tôi</h4>
-                                <div class="text-center mt-3">
-                                    <a href="#" class="me-3" style="color: #ffffff; font-size: 2rem;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-facebook">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="me-3" style="color: #ffffff; font-size: 2rem;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-twitter">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="#" class="me-3" style="color: #ffffff; font-size: 2rem;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-instagram">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                                            <path d="M16.5 7.5l0 .01"></path>
-                                        </svg>
-                                    </a>
-                                    <a href="#" style="color: #ffffff; font-size: 2rem;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brand-discord">
-                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                            <path d="M9 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                            <path d="M15 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
-                                            <path d="M7.5 7.5c3.5 -1 5.5 -1 9 0"></path>
-                                            <path d="M7 16.5c3.5 1 6.5 1 10 0"></path>
-                                            <path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-1 2.5"></path>
-                                            <path d="M8.5 17c0 1 -1.356 3 -1.832 3c-1.429 0 -2.698 -1.667 -3.333 -3c-.635 -1.667 -.476 -5.833 1.428 -11.5c1.388 -1.015 2.782 -1.34 4.237 -1.5l1 2.5"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <p class="mt-3 text-center" style="color: #ffffff;">
-                                    Đăng ký nhận thông báo về tiến độ phát triển game và các sự kiện đặc biệt!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <div class="container">
+        <div class="main-header">
+            <div class="navigation-tabs">
+                <a href="index.html" class="nav-tab">Overview</a>
+                <a href="world.html" class="nav-tab">World</a>
+                <a href="combat.html" class="nav-tab">Combat</a>
+                <a href="asset.html" class="nav-tab">Assets</a>
             </div>
         </div>
     </div>
     
-    <footer class="text-center" style="background-color: rgba(0, 0, 0, 0.7); padding: 20px 0; margin-top: 30px;">
-        <div class="container py-3">
-            <p class="text-white mb-1">Copyright © 2025 NhomToongTenz | Xoul's Era</p>
-            <p class="text-white-50 small">All rights reserved.</p>
+    <div class="container contact-container">
+        <h1 class="page-title">Contact Us</h1>
+        
+        <div style="display: flex; min-height: 100vh;">
+            <!-- Side Navigation -->
+            <div style="min-width: 160px; max-width: 180px; display: flex; flex-direction: column; align-items: flex-start;">
+                <nav style="position: sticky; top: 100px; display: flex; flex-direction: column; align-items: flex-start; gap: 15px; width: 140px; margin-left: 0;">
+                    <a href="#message" class="contact-nav-item active">Liên Hệ</a>
+                    <a href="#team" class="contact-nav-item">Đội Ngũ</a>
+                    <a href="#mission" class="contact-nav-item">Sứ Mệnh</a>
+                    <a href="#roadmap" class="contact-nav-item">Lộ Trình</a>
+                    <a href="#social" class="contact-nav-item">Mạng Xã Hội</a>
+                </nav>
+            </div>
+            
+            <div class="container" style="flex: 1;">
+                <!-- Contact Form Section -->
+                <section id="message">
+                    <div class="content-card">
+                        <h2 class="section-title">Gửi Tin Nhắn Cho Chúng Tôi</h2>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <form class="contact-form">
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label">Họ và Tên</label>
+                                        <input type="text" class="form-control" id="fullName" placeholder="Nhập họ tên của bạn">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="example@email.com">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Chủ Đề</label>
+                                        <select class="form-select" id="subject">
+                                            <option selected>Chọn chủ đề</option>
+                                            <option value="general">Thông tin chung</option>
+                                            <option value="support">Hỗ trợ</option>
+                                            <option value="partnership">Hợp tác</option>
+                                            <option value="press">Báo chí/Truyền thông</option>
+                                            <option value="other">Khác</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Tin Nhắn</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Nội dung tin nhắn của bạn"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn</button>
+                                </form>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <div class="mb-4">
+                                    <h4 style="font-family: 'Merienda', serif; color: #FFD040;">Thông Tin Liên Hệ</h4>
+                                    <p class="content-text">
+                                        Chúng tôi luôn sẵn lòng lắng nghe mọi góp ý và câu hỏi từ cộng đồng. 
+                                        Đừng ngần ngại liên hệ với chúng tôi qua các kênh sau:
+                                    </p>
+                                    
+                                    <ul class="list-unstyled mt-4">
+                                        <li class="d-flex align-items-center mb-3">
+                                            <span class="contact-info-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                                </svg>
+                                            </span>
+                                            <span class="contact-info-text">info@xoulsera.com</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-3">
+                                            <span class="contact-info-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
+                                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                                </svg>
+                                            </span>
+                                            <span class="contact-info-text">+84 123 456 789</span>
+                                        </li>
+                                        <li class="d-flex align-items-center mb-3">
+                                            <span class="contact-info-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin">
+                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                                    <circle cx="12" cy="10" r="3"></circle>
+                                                </svg>
+                                            </span>
+                                            <span class="contact-info-text">Hà Nội, Việt Nam</span>
+                                        </li>
+                                    </ul>
+                                    
+                                    <div class="mt-5">
+                                        <h4 style="font-family: 'Merienda', serif; color: #FFD040;">Giờ Làm Việc</h4>
+                                        <p class="content-text">
+                                            <strong>Thứ Hai - Thứ Sáu:</strong> 9:00 - 18:00<br>
+                                            <strong>Thứ Bảy:</strong> 9:00 - 12:00<br>
+                                            <strong>Chủ Nhật:</strong> Nghỉ
+                                        </p>
+                                    </div>
+                                    
+                                    <div class="mt-4">
+                                        <p class="content-text">
+                                            Thời gian phản hồi thông thường của chúng tôi là trong vòng 24 giờ làm việc.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Team Section -->
+                <section id="team">
+                    <div class="content-card">
+                        <h2 class="section-title">Đội Ngũ Phát Triển</h2>
+                        <p class="content-text text-center mb-4">
+                            NhomToongTenz là một đội ngũ phát triển game trẻ đầy tâm huyết, được thành lập vào năm 2023 với mục tiêu 
+                            tạo ra những trải nghiệm game độc đáo kết hợp giữa kỹ thuật hiện đại và văn hóa truyền thống Việt Nam.
+                        </p>
+                        
+                        <div class="row">
+                            <!-- Team Member 1 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="team-member">
+                                    <img src="assets/img/Icon/logo.svg" alt="Team Member" class="team-avatar">
+                                    <h4 class="team-name">Nguyễn Văn A</h4>
+                                    <p class="team-role">Game Director & Lead Developer</p>
+                                    <p class="content-text">
+                                        Chuyên gia về Unity và phát triển gameplay với hơn 5 năm kinh nghiệm.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Team Member 2 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="team-member">
+                                    <img src="assets/img/Icon/logo.svg" alt="Team Member" class="team-avatar">
+                                    <h4 class="team-name">Trần Thị B</h4>
+                                    <p class="team-role">Art Director & Character Designer</p>
+                                    <p class="content-text">
+                                        Chuyên gia thiết kế pixel art với niềm đam mê về thần thoại và văn hóa Việt Nam.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Team Member 3 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="team-member">
+                                    <img src="assets/img/Icon/logo.svg" alt="Team Member" class="team-avatar">
+                                    <h4 class="team-name">Lê Văn C</h4>
+                                    <p class="team-role">Game & Level Designer</p>
+                                    <p class="content-text">
+                                        Chuyên gia về thiết kế màn chơi và hệ thống gameplay cân bằng.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Team Member 4 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="team-member">
+                                    <img src="assets/img/Icon/logo.svg" alt="Team Member" class="team-avatar">
+                                    <h4 class="team-name">Phạm Minh D</h4>
+                                    <p class="team-role">Backend & Server Engineer</p>
+                                    <p class="content-text">
+                                        Phụ trách hệ thống máy chủ, bảo mật và tối ưu hóa hiệu năng cho game online.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Team Member 5 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="team-member">
+                                    <img src="assets/img/Icon/logo.svg" alt="Team Member" class="team-avatar">
+                                    <h4 class="team-name">Vũ Thị E</h4>
+                                    <p class="team-role">UI/UX Designer</p>
+                                    <p class="content-text">
+                                        Thiết kế giao diện người dùng trực quan, trải nghiệm mượt mà cho mọi nền tảng.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Team Member 6 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="team-member">
+                                    <img src="assets/img/Icon/logo.svg" alt="Team Member" class="team-avatar">
+                                    <h4 class="team-name">Đặng Quốc F</h4>
+                                    <p class="team-role">Sound & Music Composer</p>
+                                    <p class="content-text">
+                                        Sáng tác nhạc nền, hiệu ứng âm thanh sống động, tạo cảm xúc cho thế giới game.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Mission Section -->
+                <section id="mission">
+                    <div class="content-card">
+                        <h2 class="section-title">Sứ Mệnh & Tầm Nhìn</h2>
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <h4 style="font-family: 'Merienda', serif; color: #FFD040; text-align: center;">Tầm Nhìn</h4>
+                                <p class="content-text">
+                                    Trở thành studio game hàng đầu Việt Nam trong việc kết hợp văn hóa truyền thống với công nghệ hiện đại, 
+                                    tạo ra những trải nghiệm game độc đáo và mang tính giáo dục.
+                                </p>
+                            </div>
+                            
+                            <div class="col-md-6 mb-4">
+                                <h4 style="font-family: 'Merienda', serif; color: #FFD040; text-align: center;">Sứ Mệnh</h4>
+                                <p class="content-text mb-2">
+                                    Chúng tôi cam kết:
+                                </p>
+                                <ul style="color: #f3f3f3;">
+                                    <li>Tạo ra những trải nghiệm game chất lượng cao, giàu tính nghệ thuật và đậm đà bản sắc văn hóa Việt Nam</li>
+                                    <li>Phát triển các sản phẩm game kết hợp giữa yếu tố giải trí và giáo dục về lịch sử, văn hóa</li>
+                                    <li>Thúc đẩy sự phát triển của ngành công nghiệp game trong nước</li>
+                                    <li>Xây dựng cộng đồng game thủ lành mạnh và bền vững</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Roadmap Section -->
+                <section id="roadmap">
+                    <div class="content-card">
+                        <h2 class="section-title">Lộ Trình Phát Triển</h2>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="road-item">
+                                    <div class="row">
+                                        <div class="col-md-3 text-center">
+                                            <h5 style="color: #ffffff; font-family: 'Merienda', serif;">Giai đoạn 1<br>Tháng 1 - Tháng 4</h5>
+                                            <p style="color: #FFD040; font-size: 0.9rem; font-weight: bold;">Nghiên cứu & Prototype</p>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <ul style="color: #f3f3f3;">
+                                                <li>Hoàn thiện nghiên cứu thị trường, xác thực ý tưởng và các yếu tố độc đáo.</li>
+                                                <li>Hoàn thiện GDD chi tiết, xác định rõ phạm vi phát hành.</li>
+                                                <li>Xây dựng Art Style Guide, sản xuất key assets.</li>
+                                                <li>Phát triển prototype cho các cơ chế cốt lõi: điều khiển, platforming, combat, AI companion, co-op, mở khóa bản đồ qua Trụ.</li>
+                                                <li>Lập kế hoạch sản xuất chi tiết cho giai đoạn tiếp theo.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="road-item">
+                                    <div class="row">
+                                        <div class="col-md-3 text-center">
+                                            <h5 style="color: #ffffff; font-family: 'Merienda', serif;">Giai đoạn 2<br>Tháng 5 - Tháng 10</h5>
+                                            <p style="color: #FFD040; font-size: 0.9rem; font-weight: bold;">Sản xuất Alpha</p>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <ul style="color: #f3f3f3;">
+                                                <li>Xây dựng phần lớn nội dung và tính năng đã xác định trong phạm vi phát hành.</li>
+                                                <li>Triển khai các khu vực chính, kẻ thù, boss, kỹ năng Metroidvania cần thiết.</li>
+                                                <li>Hoàn thiện hệ thống AI Companion và Co-op.</li>
+                                                <li>Tích hợp phần lớn Art và Âm thanh.</li>
+                                                <li>Thiết lập quy trình QA, kiểm thử tích hợp và playtest nội bộ định kỳ.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <div class="road-item">
+                                    <div class="row">
+                                        <div class="col-md-3 text-center">
+                                            <h5 style="color: #ffffff; font-family: 'Merienda', serif;">Giai đoạn 3<br>Tháng 11 - Tháng 2 năm sau</h5>
+                                            <p style="color: #FFD040; font-size: 0.9rem; font-weight: bold;">Beta, Đánh bóng & Ra mắt</p>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <ul style="color: #f3f3f3;">
+                                                <li>Hoàn thiện nội dung còn lại, tập trung sửa lỗi, cân bằng, tối ưu hóa và đánh bóng.</li>
+                                                <li>Tổ chức các đợt Closed Beta, thu thập phản hồi về cân bằng, độ khó, lỗi và trải nghiệm tổng thể.</li>
+                                                <li>QA nội bộ thực hiện test hồi quy kỹ lưỡng, cân bằng gameplay chuyên sâu.</li>
+                                                <li>Sửa lỗi toàn diện, tối ưu hóa hiệu năng, hoàn thiện tích hợp Steam.</li>
+                                                <li>Marketing, công bố ngày phát hành, chuẩn bị build cuối cùng và ra mắt trên Steam.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Social Media Section -->
+                <section id="social">
+                    <div class="content-card">
+                        <h2 class="section-title">Theo Dõi Chúng Tôi</h2>
+                        
+                        <div class="row mb-4">
+                            <div class="col-md-12 text-center">
+                                <p class="content-text">
+                                    Kết nối với chúng tôi trên các nền tảng mạng xã hội để nhận các thông tin cập nhật mới nhất, 
+                                    tham gia các sự kiện đặc biệt và trở thành một phần của cộng đồng Xoul's Era ngày càng phát triển!
+                                </p>
+                                
+                                <div class="mt-4 mb-4">
+                                    <a href="#" class="social-icon mx-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-icon mx-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter">
+                                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-icon mx-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-icon mx-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube">
+                                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="social-icon mx-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-discord">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </a>
+                                </div>
+                                
+                                <div class="mt-5 mb-3">
+                                    <h4 style="font-family: 'Merienda', serif; color: #FFD040;">Đăng Ký Nhận Thông Báo</h4>
+                                    <p class="content-text">
+                                        Nhận các tin tức mới nhất về tiến độ phát triển game, cập nhật và sự kiện đặc biệt!
+                                    </p>
+                                </div>
+                                
+                                <div class="row justify-content-center">
+                                    <div class="col-md-6">
+                                        <form class="contact-form">
+                                            <div class="input-group mb-3">
+                                                <input type="email" class="form-control" placeholder="Email của bạn" aria-label="Email của bạn">
+                                                <button class="btn btn-primary" type="button">Đăng Ký</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.9);">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <p class="text-white my-2" style="font-family: 'Work Sans', sans-serif;">Copyright&nbsp;©&nbsp;Xoul's Era 2025</p>
+                </div>
+                <div class="col">
+                    <ul class="list-inline my-2">
+                        <li class="list-inline-item me-4">
+                            <a class="link-light" href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a class="link-light" href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="link-light" href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <a class="text-white my-2" href="privacy.html" style="font-family: 'Work Sans', sans-serif;">Privacy Policy</a>
+                </div>
+            </div>
         </div>
     </footer>
+    
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.classList.contains('contact-nav-item')) {
+                    e.preventDefault();
+                    document.querySelectorAll('.contact-nav-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Scrollspy for contact-nav
+        window.addEventListener('scroll', function() {
+            const sections = ['#message', '#team', '#mission', '#roadmap', '#social'];
+            let scrollPos = window.scrollY || document.documentElement.scrollTop;
+            for (let i = sections.length - 1; i >= 0; i--) {
+                let section = document.querySelector(sections[i]);
+                if (section && section.offsetTop - 120 <= scrollPos) {
+                    document.querySelectorAll('.contact-nav-item').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    let navBtn = document.querySelector('.contact-nav-item[href="' + sections[i] + '"]');
+                    if (navBtn) navBtn.classList.add('active');
+                    break;
+                }
+            }
+        });
+    </script>
     
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>

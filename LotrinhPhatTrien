@@ -1,0 +1,65 @@
+LỘ TRÌNH PHÁT TRIỂN SẢN PHẨM GAME - Xoul's Era (Timeline 14 Tháng)
+1. Giai Đoạn 1: Nghiên Cứu, Tiền Sản Xuất & Prototype Cốt lõi (Tháng 1 – Tháng 4) - [4 tháng]
+Mục tiêu:
+Hoàn thiện nghiên cứu thị trường, xác thực ý tưởng và các yếu tố độc đáo.
+Hoàn thiện GDD chi tiết (không chỉ là MVP), xác định rõ "Launch Scope" - phạm vi nội dung và tính năng cho bản phát hành 14 tháng.
+Hoàn thiện Art Style Guide và các key assets.
+Xây dựng các prototype kỹ thuật vững chắc cho các cơ chế rủi ro nhất: Điều khiển & Platforming, Combat Feel (Jonan & Centaur Lady), AI Companion cơ bản nhưng đáng tin cậy (đi theo, tấn công, hồi sinh), Kết nối Co-op ổn định (Mirror/Steamworks), Cơ chế Mở khóa Bản đồ qua Trụ.
+Lập kế hoạch sản xuất chi tiết cho giai đoạn tiếp theo.
+Công việc chính:
+Thực hiện Nghiên cứu Thị trường & Phân tích đối thủ.
+Hoàn thiện GDD chi tiết, chốt Launch Scope.
+Hoàn thiện Art Style Guide, sản xuất key art assets.
+Prototyping Chuyên sâu: Dành thời gian đủ để không chỉ kiểm tra tính khả thi mà còn tinh chỉnh "cảm giác" gameplay cốt lõi và giải quyết các vấn đề kỹ thuật cơ bản của AI/Networking.
+Xây dựng Kế hoạch Kỹ thuật chi tiết (kiến trúc code, giải pháp AI/Network).
+Playtest nội bộ thường xuyên các prototype.
+Kết quả kỳ vọng:
+GDD chi tiết và Launch Scope được xác định rõ ràng.
+Art Style Guide hoàn chỉnh, key assets sẵn sàng.
+Các prototype kỹ thuật vững chắc, xác nhận "game feel" và giải pháp cho các hệ thống phức tạp.
+Kế hoạch sản xuất chi tiết, đáng tin cậy cho Giai đoạn 2.
+2. Giai Đoạn 2: Sản xuất Alpha (Tháng 5 – Tháng 10) - [6 tháng]
+Mục tiêu:
+Xây dựng phần lớn nội dung và tính năng đã xác định trong Launch Scope. Mục tiêu đạt Feature Complete Alpha (tất cả các hệ thống chính đã được triển khai và hoạt động, phần lớn nội dung cốt lõi đã có).
+Triển khai tất cả các khu vực chính, kẻ thù, boss cốt truyện, và kỹ năng Metroidvania cần thiết cho luồng chơi chính.
+Hoàn thiện hệ thống AI Companion với các hành vi cốt lõi và một số cải tiến "thông minh".
+Hoàn thiện hệ thống Co-op (kết nối, đồng bộ, hồi sinh, cân bằng cơ bản).
+Tích hợp phần lớn Art và Âm thanh.
+Thiết lập quy trình QA và bắt đầu kiểm thử tích hợp.
+Công việc chính:
+Sản xuất Nội dung:
+Level Design: Xây dựng các khu vực chính, thử thách platforming, đặt kẻ thù, bí mật, Trụ.
+Programming: Hoàn thiện tất cả các hệ thống gameplay cốt lõi. Triển khai AI phức tạp hơn. Tối ưu hóa và sửa lỗi networking Co-op. Tích hợp Steamworks (Cloud Save, Achievements cơ bản).
+Art Production: Sản xuất sprites, animations, tilesets, backgrounds, UI theo kế hoạch.
+Sound: Tích hợp SFX và nhạc nền cho các khu vực/sự kiện chính.
+Kiểm thử Tích hợp (Integration Testing): QA bắt đầu test các bản build tổng hợp thường xuyên, đảm bảo các hệ thống hoạt động tốt với nhau.
+Playtest Nội bộ Định kỳ: Đánh giá luồng chơi tổng thể, độ khó ban đầu, tính hấp dẫn của các khu vực/boss đã hoàn thành.
+Kết quả kỳ vọng:
+Bản build Alpha (Feature Complete). Game có thể chơi được qua phần lớn nội dung cốt lõi.
+Tất cả các hệ thống chính đã được triển khai và hoạt động ở mức độ cơ bản đến khá.
+Danh sách lỗi và các vấn đề cần cân bằng/đánh bóng được xác định rõ.
+3. Giai Đoạn 3: Beta, Đánh bóng & Ra mắt (Tháng 11 – Tháng 2 năm sau) - [4 tháng]
+Mục tiêu:
+Hoàn thiện nốt phần nội dung còn lại (nếu có), tập trung vào sửa lỗi, cân bằng, tối ưu hóa và đánh bóng.
+Đạt được chất lượng sản phẩm đủ tốt để phát hành.
+Thực hiện các hoạt động marketing cuối cùng và ra mắt game.
+Công việc chính:
+Hoàn thiện Nội dung & Polish: Hoàn thành các khu vực/boss phụ (nếu có trong scope). Thêm "juice" (hiệu ứng, rung lắc, âm thanh phản hồi...) để tăng cảm giác thỏa mãn. Tinh chỉnh animation, UI/UX.
+Kiểm thử Beta (Beta Testing):
+Tổ chức các đợt Closed Beta (có thể mời cộng đồng tham gia giới hạn) để thu thập phản hồi về cân bằng, độ khó, lỗi và trải nghiệm tổng thể.
+QA nội bộ thực hiện test hồi quy (regression testing) kỹ lưỡng.
+Cân bằng Gameplay Chuyên sâu: Điều chỉnh chi tiết chỉ số, hành vi AI, độ khó boss/platforming, phần thưởng, tốc độ tiến trình dựa trên dữ liệu và phản hồi từ Beta.
+Sửa lỗi Toàn diện: Giải quyết phần lớn lỗi được báo cáo, ưu tiên các lỗi nghiêm trọng và thường gặp.
+Tối ưu hóa Hiệu năng: Đảm bảo game chạy mượt trên cấu hình mục tiêu, giảm thời gian tải.
+Hoàn thiện Tích hợp Steam: Hoàn thành danh sách Achievements, kiểm tra kỹ Cloud Save, Steam Input.
+Marketing & Chuẩn bị Ra mắt:
+Công bố ngày phát hành, tung trailer ra mắt chính thức.
+Đẩy mạnh tương tác cộng đồng, gửi bản build cho báo chí/KOLs.
+Hoàn thiện trang Steam Store.
+Chuẩn bị bản build cuối cùng (Gold Master), gửi Steam duyệt.
+Ra mắt trên Steam (Cuối Tháng 2 năm sau).
+Kết quả kỳ vọng:
+Bản build Beta ổn định, được cân bằng tốt hơn.
+Bản Gold Master chất lượng cao, sẵn sàng phát hành.
+Game được phát hành thành công trên Steam.
+Kế hoạch hỗ trợ sau ra mắt sẵn sàng.

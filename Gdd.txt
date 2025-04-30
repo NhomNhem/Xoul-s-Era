@@ -1,0 +1,111 @@
+GAME DESIGN DOCUMENT (GDD) - Xoul's Era (v2.0 - Metroidvania, AI Companion/Co-op, Tiếng Việt)
+1. TÊN GAME:
+Xoul’s Era
+2. GENRE (Thể loại):
+Metroidvania / 2D Action Platformer với Bạn đồng hành AI (AI Companion). Hỗ trợ tùy chọn Co-op 1-2 Người chơi (Online/Local).
+3. GAME ELEMENTS (Yếu tố Gameplay Cốt Lõi):
+Thế giới 2D Kết nối (Interconnected World): Một bản đồ thế giới 2D rộng lớn, liền mạch, được thiết kế theo mô hình kết nối chặt chẽ (lấy cảm hứng từ Hollow Knight), bao gồm nhiều khu vực (zones) riêng biệt (Xylos, Origin, Leto...). Khuyến khích khám phá phi tuyến tính và quay lại (backtracking). Nhiều khu vực bí mật, lối đi ẩn, vật phẩm thu thập.
+Thiết kế Khu vực (Zone Design): Mỗi khu vực có chủ đề môi trường (rừng, tàn tích, hang băng...) và chủng tộc/sinh vật đặc trưng. Có các cơ chế gameplay môi trường độc đáo (Ví dụ: Khu vực A có gió mạnh ảnh hưởng nhảy, Khu vực B có vùng tối cần nguồn sáng).
+Kỹ năng Mở khóa (Ability Gating): Tiến trình chính dựa trên việc tìm và mở khóa các kỹ năng/nâng cấp vĩnh viễn để tiếp cận các khu vực trước đây không thể đến được.
+Các kỹ năng cốt lõi dự kiến (Ví dụ): Lướt (Dash), Nhảy đôi (Double Jump), Leo/Nhảy tường (Wall Climb/Jump), Đập đất (Ground Slam - để phá sàn yếu), một dạng Tương tác/Tấn công Tầm xa (để kích hoạt công tắc/tấn công). Thứ tự mở khóa được thiết kế cẩn thận.
+Bản đồ & Định hướng (Mở khóa qua Trụ):
+Bản đồ chi tiết cho mỗi khu vực lớn được mở khóa bằng cách tìm và kích hoạt "Diệt Thần Trụ" (God-Slaying Pillar) độc đáo của khu vực đó.
+Trước khi kích hoạt Trụ, bản đồ chỉ hiển thị phòng/khu vực nhỏ người chơi đang đứng (chi tiết hạn chế). Việc định hướng dựa vào quan sát môi trường và trí nhớ.
+Sau khi kích hoạt Trụ, bố cục bản đồ chi tiết của toàn bộ khu vực đó được hiển thị (bao gồm điểm lưu đã biết, vị trí Trụ).
+Người chơi không thể đặt điểm đánh dấu tùy chỉnh (custom markers) trên bản đồ (Quyết định thiết kế nhằm tăng thử thách khám phá, có thể thay đổi qua playtesting).
+Dịch chuyển nhanh (Fast Travel): Được kích hoạt cùng lúc với Diệt Thần Trụ. Người chơi có thể di chuyển tức thời giữa các Trụ đã kích hoạt.
+Bí mật & Thu thập (Collectibles):
+Vật phẩm thu thập chính: "Mảnh vỡ Lõi Xoul" (Xoul's Core Fragments). Thu thập đủ một số lượng nhất định (ví dụ: 3) sẽ tăng vĩnh viễn một chỉ số cốt lõi (Máu tối đa hoặc Năng lượng Soul tối đa).
+Các loại khác: Ghi chú lore, tiền tệ, nguyên liệu nâng cấp (nếu có).
+Cơ chế Platforming Chính xác: Điều khiển nhạy bén, chính xác cho nhảy, nhảy đôi, tương tác tường, lướt... Thử thách platforming đa dạng và cạm bẫy môi trường.
+Hệ thống Chiến đấu Hành động 2D (Action Combat):
+Chiến đấu thời gian thực, dựa trên kỹ năng (timing, né tránh, đỡ đòn - parry).
+Jonan (P1): Chủ yếu cận chiến (ví dụ: Kiếm) với combo tiềm năng.
+Centaur Lady (AI/P2): Chiến đấu tầm xa bằng Cung.
+Cơ chế Cốt lõi: Lướt (Dash) có i-frames (khung bất tử), Đỡ đòn (Parry) cần timing chuẩn.
+Hệ thống Tài nguyên: Năng lượng Soul (Soul Energy) dùng cho kỹ năng đặc biệt, hồi phục khi tấn công địch hoặc nghỉ tại điểm lưu.
+Đa dạng kẻ thù với pattern độc đáo; các trận đấu boss thử thách, nhiều giai đoạn.
+Tiến triển Nhân vật (Character Progression):
+Chủ yếu qua Mở khóa Kỹ năng và thu thập Mảnh vỡ Lõi Xoul.
+Jonan: Có thể trang bị Bùa hộ mệnh/Thánh tích (Charms/Relics) tìm được, mang lại hiệu ứng bị động hoặc thay đổi kỹ năng. Vũ khí chính có thể có đường nâng cấp.
+Centaur Lady: Chỉ số cơ bản tự động tăng theo tiến trình của Jonan (công thức scaling cụ thể TBD). Có thể trang bị các loại Cung (Bow) và Giáp (Armor) khác nhau tìm được/mua, chúng sẽ thay đổi hiệu ứng kỹ năng thay vì chỉ tăng chỉ số thuần túy.
+Hệ thống Bạn đồng hành AI (AI Companion System - Centaur Lady - Chơi Đơn):
+Centaur Lady đi cùng Jonan, do AI điều khiển.
+Hành vi AI: Đi theo Jonan, tự vượt qua thử thách platforming, tham gia chiến đấu, ưu tiên mục tiêu của Jonan. Hướng tới hành vi "thông minh" hơn (định vị, né đòn rõ ràng, dùng skill hiệu quả - chi tiết triển khai TBD).
+Trạng thái Bị hạ gục: Khi hết máu, AI vào trạng thái chờ. Jonan phải tương tác (giữ nút X giây) để hồi sinh cô ấy.
+Chế độ Chơi Phối hợp (Co-op Mode - Tùy chọn, 2 Người chơi):
+Người chơi thứ hai điều khiển trực tiếp Centaur Lady, thay thế AI. Sử dụng kỹ năng và trang bị hiện có của cô ấy.
+Camera: Màn hình chia sẻ (Shared screen) với giới hạn zoom-out. Có thể teleport người chơi bị tụt lại (cần thử nghiệm).
+Cân bằng: Kẻ thù tăng nhẹ Máu/Sát thương.
+Hồi sinh: Nếu Player 2 (Centaur Lady) bị hạ, Player 1 (Jonan) phải thực hiện hành động hồi sinh. Player 2 không thể tự hồi sinh hoặc hồi sinh Player 1. Nếu cả hai bị hạ, quay lại điểm lưu cuối.
+Loot/Tài nguyên: Tiền tệ/XP có thể được chia sẻ/nhân đôi. Vật phẩm tiêu hao nhặt riêng. Vật phẩm cốt truyện/kỹ năng/Mảnh vỡ Lõi Xoul mở khóa cho cả hai. Trang bị riêng của Centaur Lady có thể được nhặt bởi bất kỳ ai nhưng chỉ cô ấy dùng được.
+Cốt truyện & Lore: Khám phá bí ẩn của Diệt Thần Trụ và thế giới suy tàn Xoul's Era. Truyền tải qua môi trường, mô tả vật phẩm, NPC, và các đoạn cắt cảnh pixel art tối thiểu. Tập trung vào không khí và sự bí ẩn.
+Nhân vật chính (Protagonists):
+Jonan (P1): Nhân vật định sẵn, có thể có tùy chỉnh ngoại hình nhỏ. Động cơ liên quan đến các Trụ/số phận thế giới.
+Centaur Lady (AI/P2): Bạn đồng hành xác định, tập trung chiến đấu bằng cung. Lý lịch và mối liên hệ với Jonan là một phần của lore.
+NPCs: Cung cấp lore, bán vật phẩm/nâng cấp, giao nhiệm vụ phụ (nếu có).
+4. PLAYER (Số người chơi):
+1 Người chơi (với AI Companion) hoặc 2 Người chơi (Co-op Local/Online qua Steam).
+5. TECHNICAL SPECS (Thông số Kỹ thuật):
+Đồ họa (Graphics): 2D Pixel Art. (Phong cách: Hướng tới chi tiết cao kiểu 16-bit, animation mượt, tập trung ánh sáng và không khí, tông màu tối/huyền bí.)
+Góc nhìn (View): Side-scrolling 2D (Nhìn ngang).
+Nền tảng (Platform): PC (Windows - Phát hành chính thức qua Steam). Cân nhắc hỗ trợ Mac/Linux trên Steam sau. Tiềm năng port sang Console (Switch, PlayStation, Xbox) cao.
+Engine: Unity Engine.
+Ngôn ngữ lập trình (Language): C#.
+Mạng (Networking - Cho Co-op): Mirror Networking.
+Transport Layer: Ưu tiên Steamworks Transport (SteamNetworkingSockets).
+Kiến trúc: Host (Listen Server).
+Tích hợp SDK: Steamworks SDK (Bắt buộc cho Achievements, Cloud Saves, Steam Input, Friends/Lobbies cho Co-op).
+6. GAME PLAY (Mô tả Cách Chơi):
+Trong thế giới suy tàn của Xoul's Era, người chơi điều khiển Jonan, cùng với bạn đồng hành AI Centaur Lady (hoặc người chơi thứ hai điều khiển cô ấy). Sử dụng platforming chính xác và chiến đấu hành động, họ khám phá thế giới 2D rộng lớn, kết nối. Người chơi phải tìm và kích hoạt Diệt Thần Trụ để vẽ bản đồ, thu thập kỹ năng mới để vượt chướng ngại vật, tìm Mảnh vỡ Lõi Xoul để mạnh hơn, và trang bị cho Centaur Lady các món đồ thay đổi kỹ năng, dần hé lộ bí mật về sự sụp đổ của thế giới.
+7. Game Play Outline (Đề cương Cách Chơi):
+Vòng lặp Metroidvania tiêu chuẩn: Khám phá -> Gặp Rào cản -> Tìm Kỹ năng mới (thường được bảo vệ bởi Boss/Thử thách) -> Nhận Kỹ năng -> Vượt Rào cản -> Vào Khu vực mới. Kết hợp việc tìm và kích hoạt Diệt Thần Trụ là bước quan trọng trong khám phá khu vực. Co-op cho phép tham gia/rời đi (drop-in/drop-out).
+8. KEY FEATURES (Tính Năng Nổi Bật):
+Thế giới Metroidvania 2D Phi tuyến tính Rộng lớn, Kết nối.
+Hệ thống Platforming Chính xác và Thử thách.
+Chiến đấu Hành động 2D Sâu sắc và Hấp dẫn.
+Đồ họa Pixel Art Chi tiết và Đậm phong cách.
+Tiến triển Nhân vật Ý nghĩa qua Mở khóa Kỹ năng & Thu thập Nâng cấp.
+Bạn đồng hành AI (Centaur Lady) độc đáo trong Chơi Đơn.
+Chế độ Co-op Bất đối xứng Tùy chọn (Jonan & Centaur Lady).
+Cơ chế Mở khóa Bản đồ đặc trưng qua Diệt Thần Trụ.
+Tích hợp Tính năng Steam (Achievements, Cloud Save, Co-op qua Steam).
+9. DESIGN DOCUMENT (Chi tiết Thiết kế - Mechanics):
+(Cần các tài liệu riêng, chi tiết cho từng hệ thống):
+Bộ điều khiển Người chơi (Player Controller - Vật lý di chuyển, state machine của Jonan & Centaur Lady)
+Hệ thống Chiến đấu (Combat System - Hitbox, công thức sát thương, AI địch, pattern Boss, chi tiết Vũ khí/Kỹ năng cho cả hai nhân vật)
+Hệ thống Tiến trình & Kỹ năng (Progression & Ability System - Chi tiết kỹ năng, đường nâng cấp, hệ thống Bùa/Thánh tích, cơ chế scaling/trang bị của Centaur Lady)
+Thiết kế Màn chơi & Thế giới (Level Design & World Layout - Kết nối bản đồ, luồng chơi trong khu vực, thiết kế câu đố, vị trí đặt Trụ)
+Hệ thống Hành vi AI (AI Behavior System - Tìm đường, logic chiến đấu, dùng skill, tự bảo vệ của Centaur Lady)
+Hệ thống Co-op (Co-op System - Triển khai Mirror, đồng bộ trạng thái, quy tắc cân bằng, cơ chế hồi sinh, giải pháp camera)
+Thiết kế UI/UX (Layout, phản hồi, độ dễ đọc, tối ưu tay cầm)
+Hướng dẫn Phong cách Nghệ thuật & Animation (Art & Animation Style Guide - Thông số pixel, bảng màu, quy chuẩn)
+Thiết kế Âm thanh & Âm nhạc.
+10. GAME FLOWCHART (Sơ đồ Luồng Game):
+(Cần sơ đồ chi tiết thể hiện kết nối thế giới, vị trí các ability gate, boss, và luồng chơi co-op).
+11. PLAYER DEFINITION (Định nghĩa Nhân vật Người Chơi):
+Jonan (Player 1):
+Chỉ số Cốt lõi: HP (Máu), Soul Energy (Năng lượng Soul).
+Vai trò Chiến đấu: Tập trung cận chiến.
+Tiến trình: Nhận kỹ năng Metroidvania cốt lõi, HP/Energy từ Mảnh vỡ Lõi Xoul, tùy biến qua Bùa/Thánh tích.
+Slots Trang bị: Vũ khí (Có thể nâng cấp?), Slots Bùa/Thánh tích (Nhiều).
+Centaur Lady (AI / Player 2):
+Chỉ số Cốt lõi: HP (Tăng theo Jonan).
+Vai trò Chiến đấu: Tập trung tầm xa (Cung).
+Tiến trình: Nhận kỹ năng Metroidvania cốt lõi cùng Jonan. Hiệu ứng kỹ năng thay đổi bởi Cung và Giáp được trang bị.
+Slots Trang bị: Slot Cung, Slot Giáp.
+Trạng thái AI: Đi theo, Chiến đấu, Nhắm mục tiêu, Dùng Kỹ năng, Né tránh (cơ bản), Bị hạ gục/Chờ hồi sinh.
+12. USER INTERFACE (UI - Giao diện Người dùng):
+HUD: Thanh Máu/Soul Energy của người chơi. Thanh Máu của AI/P2. Icon Bùa/Thánh tích đang trang bị (tùy chọn). Tiền tệ. Thông báo Bị hạ gục/Cần hồi sinh.
+Menus: Màn hình Bản đồ (Vị trí Trụ, điểm lưu). Màn hình Nhân vật/Trang bị (Bùa của Jonan, Cung/Giáp của Centaur Lady). Kho đồ. Danh sách Kỹ năng. Tùy chọn.
+Phong cách: Pixel Art nhất quán, rõ ràng, ưu tiên sử dụng tay cầm.
+13. IMPORTANT CONSIDERATIONS / RISKS (Cân nhắc Quan trọng / Rủi ro):
+Cân bằng trải nghiệm Metroidvania cốt lõi với chế độ Co-op tùy chọn.
+Thiết kế gameplay Co-op Bất đối xứng hấp dẫn.
+Tinh chỉnh hệ thống mở khóa bản đồ qua Trụ để vừa thú vị vừa không gây khó chịu.
+Phát triển AI đáng tin cậy và tạo cảm giác "thông minh" cho Centaur Lady.
+Giải quyết thách thức kỹ thuật và thiết kế của camera Co-op.
+Độ phức tạp trong phát triển tăng lên đáng kể do có AI companion và co-op bất đối xứng.
+14. MONETIZATION (Kiếm tiền):
+Mô hình chính: Premium (Buy-to-Play - Mua 1 lần) phát hành trên Steam.
+Tiềm năng sau phát hành: DLC Mở rộng trả phí (khu vực, cốt truyện, boss, kỹ năng mới), Nhạc nền (Soundtrack) kỹ thuật số, Sách ảnh (Artbook) kỹ thuật số.
