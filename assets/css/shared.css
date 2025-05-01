@@ -1,11 +1,12 @@
 /* Shared styles for Xoul's Era (chuẩn theo Introduction.html) */
 body {
-    background: linear-gradient(135deg, #2b0537, #1e0b3b, #0d1954);
+    background: linear-gradient(135deg, #FAF2DD, #F1BA85); /* Light Cream to Peach */
     min-height: 100vh;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     position: relative;
+    color: #AC6959; /* Brown */
 }
 body::before {
     content: '';
@@ -14,9 +15,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(255, 50, 150, 0.4) 0%, transparent 30%),
-        radial-gradient(circle at 80% 20%, rgba(50, 200, 255, 0.4) 0%, transparent 30%);
+    background: none; /* Removed red and blue radial gradients */
     pointer-events: none;
     z-index: -1;
 }
@@ -33,8 +32,8 @@ body::before {
     gap: 10px;
 }
 .nav-tab {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: #EFD090; /* Light Gold */
+    color: #AC6959; /* Brown */
     padding: 8px 20px;
     border-radius: 25px;
     text-decoration: none;
@@ -44,30 +43,27 @@ body::before {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #F1BA85; /* Peach */
 }
 .nav-tab:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    color: white;
-    background-color: rgba(255, 255, 255, 0.1);
+    color: #FAF2DD; /* Light Cream */
+    background-color: #F1BA85; /* Peach */
 }
 .nav-tab.active {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
+    background-color: #E79476; /* Coral */
+    color: #FAF2DD; /* Light Cream */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .page-title {
     font-family: 'Water Brush', cursive;
     font-size: 80px;
-    color: white;
+    color: #E79476; /* Coral */
     margin-bottom: 30px;
     text-align: center;
     text-shadow: 
-        0 0 5px rgba(255, 255, 255, 0.7),
-        0 0 10px rgba(255, 255, 255, 0.5),
-        0 0 20px rgba(255, 50, 150, 0.5),
-        0 0 40px rgba(255, 50, 150, 0.4);
+        0 0 10px rgba(172, 105, 89, 0.7);
     animation: pulsate 2s infinite alternate;
 }
 .section-title {
@@ -109,11 +105,11 @@ body::before {
     text-align: center;
     font-family: 'Merienda', serif;
     font-size: 16px;
-    background: #FFD040;
-    color: #18100a;
+    background: #EFD090; /* Light Gold */
+    color: #AC6959; /* Brown */
     border-radius: 30px;
     font-weight: bold;
-    border: none;
+    border: 2px solid #F1BA85; /* Peach */
     box-shadow: none;
     transition: background 0.3s, color 0.3s;
     padding: 10px 0;
@@ -122,7 +118,9 @@ body::before {
 .intro-nav-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    color: black;
+    color: #FAF2DD; /* Light Cream */
+    background: #E79476; /* Coral */
+    border-color: #EFD090; /* Light Gold */
 }
 .intro-nav-item.active {
     background: #FFA040;
