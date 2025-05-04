@@ -1,0 +1,12 @@
+.fit-cover {
+  object-fit: cover;
+}
+
+.active {
+  font-weight: bold;
+}
+
+hr {
+  /*color: #222222;*/
+}
+
